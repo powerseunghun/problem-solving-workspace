@@ -9,7 +9,6 @@ public class GetDay {
 			sum += days[i - 1];
 		}
 		sum += (b - 1);
-		
 		return d[sum % 7];
 	}
 	public static void main(String[] args) {
