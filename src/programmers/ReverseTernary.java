@@ -13,6 +13,7 @@ public class ReverseTernary {
 			int num2 = (int) Math.pow(3, s.length() -1 - i);
 			answer += num * num2;
 		}
+		
 		return answer;
 	}
 	public static void main(String[] args) {
