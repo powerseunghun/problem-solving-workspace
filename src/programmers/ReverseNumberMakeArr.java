@@ -11,6 +11,7 @@ public class ReverseNumberMakeArr {
 		}
 		return list;
 	}
+	
 //	public int[] solution(int n) {
 //		int[] answer = new int[(n + "").length()];
 //		
