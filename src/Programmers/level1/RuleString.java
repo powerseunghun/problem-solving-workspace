@@ -1,4 +1,4 @@
-package programmers;
+package Programmers.level1;
 
 public class RuleString {
 	public String solution(int n) {

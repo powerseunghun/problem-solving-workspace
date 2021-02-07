@@ -1,4 +1,4 @@
-package programmers;
+package Programmers.level1;
 
 public class GetMiddleText {
 	public String solution(String s) {

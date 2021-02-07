@@ -1,4 +1,4 @@
-package programmers;
+package Programmers.level1;
 
 public class EliminationMinNum {
 	public int[] solution(int[] arr) {

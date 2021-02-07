@@ -1,4 +1,4 @@
-package programmers;
+package Programmers.level1;
 
 public class InnerProduct {
 	public int solution(int[] a, int[] b) {

@@ -1,4 +1,4 @@
-package programmers;
+package Programmers.level1;
 
 public class StringDescending {
 	public String solution(String s) {

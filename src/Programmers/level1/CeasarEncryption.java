@@ -1,4 +1,4 @@
-package programmers;
+package Programmers.level1;
 
 public class CeasarEncryption {
 	public String solution(String s, int n) {

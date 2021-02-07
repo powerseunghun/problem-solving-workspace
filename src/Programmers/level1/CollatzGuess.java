@@ -1,4 +1,4 @@
-package programmers;
+package Programmers.level1;
 
 public class CollatzGuess {
 	public int solution(long n) {

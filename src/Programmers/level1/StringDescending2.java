@@ -1,4 +1,4 @@
-package programmers;
+package Programmers.level1;
 
 public class StringDescending2 {
 	public long solution(long n) {

@@ -1,4 +1,4 @@
-package programmers;
+package Programmers.level1;
 
 public class MiddleNumberSum {
 	public long solution(int a, int b) {
