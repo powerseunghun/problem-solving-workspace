@@ -11,7 +11,6 @@ public class ArraySum {
         }
         return answer;
     }
-	
 	public static void main(String[] args) {
 		
 	}
