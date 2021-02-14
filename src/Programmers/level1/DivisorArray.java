@@ -1,6 +1,7 @@
 package Programmers.level1;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class DivisorArray {
 	public int[] solution(int[] arr, int divisor) {
@@ -22,6 +23,7 @@ public class DivisorArray {
         for (int i = 0; i < list.size(); i++) {
         	answer[i] = list.get(i);
         }
+        Arrays.sort(answer);
         
         return answer;
     }
