@@ -29,7 +29,6 @@ public class MakeBigNumber {
     }
 	public static void main(String[] args) {
 //		System.out.println(new MakeBigNumber().solution("4177252841", 4));
-		
 //		System.out.println('1' - 48);
 		System.out.println("123456789".substring(2, 4));
 		
