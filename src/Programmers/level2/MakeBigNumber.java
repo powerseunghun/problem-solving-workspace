@@ -3,34 +3,27 @@ package Programmers.level2;
 public class MakeBigNumber {
 	public String solution(String number, int k) {
         String answer = "", subs ="";
+        StringBuilder sb = new StringBuilder();
         int loop = number.length() - k, max = 0;
-		int maxIdx = 0, subIdx = loop - 1;
+		int startIdx = -1, lastIdx = loop - 1;
         for (int i = 0; i < loop; i++) {
         	max = 0;
-        	subs = number.substring(0, number.length() - subIdx + i);
-        	System.out.println("sub : " + subs);
-        	for (int j = 0; j < subs.length(); j++) {
-        		if (subs.charAt(j) - 48 > max) {
-        			max = subs.charAt(j) - 48;
-        			maxIdx = j;
+        	for (int j = startIdx + 1; j < number.length() - (lastIdx - i); j++) {
+        		if (number.charAt(j) - 48 == 9) {
+        			max = 9;
+        			startIdx = j;
+        			break;
         		}
-        		
+        		if (number.charAt(j) - 48 > max) {
+        			max = number.charAt(j) - 48;
+        			startIdx = j;
+        		}
         	}
-        	answer += max;
-        	String tmp = number.toString();
-        	number = "";
-        	for (int j = 0; j < tmp.length(); j++) {
-        		if (j == maxIdx) continue;
-        		else number += tmp.charAt(j);
-        	}
+        	sb.append(max);
         }
-        
-        return answer;
+        return sb.toString();
     }
 	public static void main(String[] args) {
-//		System.out.println(new MakeBigNumber().solution("4177252841", 4));
-//		System.out.println('1' - 48);
-		System.out.println("123456789".substring(2, 4));
-		
+		System.out.println(new MakeBigNumber().solution("1924", 2));
 	}
 }
