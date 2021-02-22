@@ -19,6 +19,7 @@ public class FailureRate {
         	failureRate[i] = base == 0 ? 0.0 : (double)personInStage[i+1] / base;
         }
         failureRateCopy = failureRate.clone();
+        
         for (int i = 0; i < failureRateCopy.length-1; i++) {
         	for (int j = 0; j < failureRateCopy.length - (i + 1); j++) {
         		if (failureRateCopy[j] < failureRateCopy[j + 1]) {
@@ -40,8 +41,5 @@ public class FailureRate {
         return answer;
     }
 	public static void main(String[] args) {
-		int N = 5;
-		int[] stages = {1, 2, 2, 1, 3};
-		new FailureRate().solution(N, stages);
 	}
 }
