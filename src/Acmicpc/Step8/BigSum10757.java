@@ -37,7 +37,6 @@ public class BigSum10757 {
 				}
 				sum[i] = temp % 10;
 			}
-//			System.out.println(sum[i]);
 		}
 		
 		for (int i = 0; i < sum.length; i++) {
