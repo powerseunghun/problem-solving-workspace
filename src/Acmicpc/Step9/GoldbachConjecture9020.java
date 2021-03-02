@@ -2,7 +2,7 @@ package Acmicpc.Step9;
 
 import java.util.Scanner;
 
-public class GoldbachConjecture {
+public class GoldbachConjecture9020 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int T, n, a, b;
