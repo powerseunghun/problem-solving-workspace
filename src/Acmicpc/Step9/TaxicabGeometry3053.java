@@ -2,7 +2,7 @@ package Acmicpc.Step9;
 
 import java.util.Scanner;
 
-public class TaxicabGeometry {
+public class TaxicabGeometry3053 {
 	public static void main(String[] args) {
 		int R = new Scanner(System.in).nextInt();
 		double PI = 3.14159265358979;

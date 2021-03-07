@@ -3,7 +3,7 @@ package Acmicpc.Step9;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class RightTriangle {
+public class RightTriangle4153 {
 	public static void main(String[] args) {
 		int max = 0, a = 0, b = 0, c = 0;
 		Scanner sc = new Scanner(System.in);

@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class FourthPoint {
+public class FourthPoint3009 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		Map<Integer, Integer> pointx = new HashMap<>();
