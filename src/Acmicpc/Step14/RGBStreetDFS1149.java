@@ -1,7 +1,10 @@
 package Acmicpc.Step14;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class RGBStreetDFS1149 {
 	static int[] array = null;
@@ -27,18 +30,22 @@ public class RGBStreetDFS1149 {
 		}
 	}
 	public static void main(String[] args) throws NumberFormatException, IOException {
-		Scanner sc = new Scanner(System.in);
-		int N = sc.nextInt();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = null;
+		int N = Integer.parseInt(br.readLine());
+		
 		cost = new int[N][3];
 		array = new int[N];
 		
 		for (int i = 0; i < N; i++) {
-			cost[i][0] = sc.nextInt();
-			cost[i][1] = sc.nextInt();
-			cost[i][2] = sc.nextInt();
+			st = new StringTokenizer(br.readLine());
+			cost[i][0] = Integer.parseInt(st.nextToken());
+			cost[i][1] = Integer.parseInt(st.nextToken());
+			cost[i][2] = Integer.parseInt(st.nextToken());
 		}
 		
-		// 47% TimeOver
+		// BufferedReader + StringTokenizer 48% TimeOver
+		// Scanner = 47% TimeOver
 		new RGBStreetDFS1149().dfs(N, 0, -1);
 		System.out.println(min);
 	}
