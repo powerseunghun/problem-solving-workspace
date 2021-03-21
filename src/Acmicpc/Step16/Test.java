@@ -11,7 +11,6 @@ public class Test {
 		for (int i = System.in.read(); i >= 'A'; i = System.in.read()) {
 			System.out.printf("%c\n", i);
 		}
-		
 //		for (int i = 77; i >= 'A'; i = 10) {
 //			System.out.println("H");
 //		}
