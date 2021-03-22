@@ -14,6 +14,9 @@ public class Test {
 //		for (int i = 77; i >= 'A'; i = 10) {
 //			System.out.println("H");
 //		}
+		String str = "(asd";
+		System.out.println(str.matches("(||)"));
 		System.out.println(13 * 29);
+		System.out.println("(".equals('(' + ""));
   	}
 }
