@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class NGE1729 {
+public class NGE17298 {
 	public static void main(String[] args) {
 		// time limit
 		Scanner sc = new Scanner(System.in);
