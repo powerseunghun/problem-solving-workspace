@@ -7,14 +7,13 @@ public class QTest {
 	public static void main(String[] args) {
 		Deque<Integer> q = new LinkedList<>();
 		q.add(3);
+		q.add(6);
 		q.add(5);
-		boolean[] check = new boolean[3];
-		for (int i = 0; i < check.length; i++) {
-			System.out.println(check[i]);
-		}
-		System.out.println(q.peekFirst());
-		System.out.println(q.peekLast());
-		System.out.println(q.peekFirst());
-		System.out.println(q.peekLast());
+		
+		q.addFirst(10);
+		q.addLast(15);
+		
+		System.out.println(q);
+		System.out.println(q.pollFirst());
 	}
 }
