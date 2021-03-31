@@ -1,6 +1,8 @@
 package Acmicpc.Step10;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class StarPrintRecursion2447 {
 	static void recursionFunc(int x, int y, int N, char[][] arr) {
@@ -18,9 +20,10 @@ public class StarPrintRecursion2447 {
 			}
 		}
 	}
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int N = sc.nextInt();
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb = new StringBuilder();
+		int N = Integer.parseInt(br.readLine());
 		char[][] arr = new char[N][N];
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr[i].length; j++) {
@@ -31,9 +34,10 @@ public class StarPrintRecursion2447 {
 		
 		for (int i = 0; i < N; i++) {
 			for (int j = 0; j < N; j++) {
-				System.out.print(arr[i][j]);
+				sb.append(arr[i][j]);
 			}
-			System.out.println();
+			sb.append("\n");
 		}
+		System.out.println(sb);
 	}
 }
