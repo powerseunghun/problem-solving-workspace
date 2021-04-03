@@ -43,23 +43,5 @@ public class MatrixMultiplication2740 {
 		}
 		
 		System.out.println(sb); 
-//		for (int i = 0; i < mat3.length; i++) {
-//			for (int j = 0; j < mat3[i].length; j++) {
-//				System.out.print(mat3[i][j] + " ");
-//			}
-//			System.out.println();
-//		}
-//		for (int i = 0; i < mat1.length; i++) {
-//			for (int j = 0; j < mat1[i].length; j++) {
-//				System.out.print(mat1[i][j] + " ");
-//			}
-//			System.out.println();
-//		}
-//		for (int i = 0; i < mat2.length; i++) {
-//			for (int j = 0; j < mat2[i].length; j++) {
-//				System.out.print(mat2[i][j] + " ");
-//			}
-//			System.out.println();
-//		}
 	}
 }
