@@ -3,6 +3,7 @@ package Acmicpc.Step23;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class DFSBFS1260 {
 	static int[][] graph = null;
@@ -36,6 +37,8 @@ public class DFSBFS1260 {
 			graph[t1][t2] = 1;
 		}
 		dfs(V);
+		
+		Arrays.fill(check, false);
 		
 	}
 }
