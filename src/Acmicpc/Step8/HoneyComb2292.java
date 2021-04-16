@@ -1,0 +1,20 @@
+package Acmicpc.Step8;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class HoneyComb2292 {
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int N = Integer.parseInt(br.readLine()), result = 1;
+		int rn = 1, weight = 6;
+		
+		while(N > rn) {
+			rn += weight;
+			weight += 6;
+			result++;
+		}
+		System.out.println(result);
+	}
+}
