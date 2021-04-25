@@ -7,7 +7,8 @@ import java.io.IOException;
 public class BasicIO1014 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringBuffer sb = new StringBuffer(br.readLine());
 		
-		System.out.printf("%.2f", Float.parseFloat(br.readLine()));
+		System.out.println(sb.reverse());
 	}
 }
