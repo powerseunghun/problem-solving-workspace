@@ -1,14 +1,12 @@
-package CodeUp.Thousandth.One;
+package CodeUp.Basic100;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class BasicIO1026 {
+public class IO1022 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String tmp = br.readLine();
-		
-		System.out.println(Integer.parseInt(tmp.split("\\:")[1]));
+		System.out.println(br.readLine());
 	}
 }

@@ -1,12 +1,12 @@
-package CodeUp.Thousandth.One;
+package CodeUp.Basic100;
 
 import java.io.InputStreamReader;
 import java.io.BufferedReader;
 import java.io.IOException;
 
-public class BasicIO1012 {
+public class IO1010 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.printf("%.6f", Float.parseFloat(br.readLine()));
+		System.out.println(Integer.parseInt(br.readLine()));
 	}
 }

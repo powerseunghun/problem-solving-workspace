@@ -1,14 +1,13 @@
-package CodeUp.Thousandth.One;
+package CodeUp.Basic100;
 
 import java.io.InputStreamReader;
 import java.io.BufferedReader;
 import java.io.IOException;
 
-public class BasicIO1020 {
+public class IO1013 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringBuffer sb = new StringBuffer(br.readLine());
-		sb.replace(6, 7, "");
-		System.out.println(sb);
+		String tmp = br.readLine();
+		System.out.println(tmp.split(" ")[0] + " " + tmp.split(" ")[1]);
 	}
 }

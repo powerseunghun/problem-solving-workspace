@@ -1,20 +1,18 @@
-package CodeUp.Thousandth.One;
+package CodeUp.Basic100;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class BasicIO1025 {
+public class IO1027 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String tmp = br.readLine();
 		
-		for (int i = 0; i < tmp.length(); i++) {
-			System.out.print("[" + tmp.charAt(i));
-			for (int j = i; j < tmp.length()-1; j++) {
-				System.out.print("0");
-			}
-			System.out.println("]");
+		for (int i = 2; i >= 0; i--) {
+			System.out.print(tmp.split("\\.")[i]);
+			if (i == 0) break;
+			System.out.print("-");
 		}
 	}
 }
