@@ -8,18 +8,13 @@ public class Synthesis1091 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String tmp = br.readLine();
-		int a = Integer.parseInt(tmp.split(" ")[0]);
-		int b = Integer.parseInt(tmp.split(" ")[1]);
-		int c = Integer.parseInt(tmp.split(" ")[2]);
-		int n = 1;
-		
-		while (true) {
-			if ((n % a == 0) && (n %b == 0) && (n%c == 0))
-			{
-				System.out.println(n);
-				break;
-			}
-			n++;
+		long a = Integer.parseInt(tmp.split(" ")[0]);
+		long m = Integer.parseInt(tmp.split(" ")[1]);
+		long d = Integer.parseInt(tmp.split(" ")[2]);
+		int n = Integer.parseInt(tmp.split(" ")[3]);
+		for (int i = 1; i < n; i++) {
+			a = (a * m) + d;
 		}
+		System.out.println(a);
 	}
 }
