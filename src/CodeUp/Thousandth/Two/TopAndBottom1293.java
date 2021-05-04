@@ -1,0 +1,22 @@
+package CodeUp.Thousandth.Two;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class TopAndBottom1293 {
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		br.readLine();
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		int max = -1, min = 101, tmp = 0;
+		
+		while (st.hasMoreTokens()) {
+			tmp = Integer.parseInt(st.nextToken());
+			max = tmp >= max ? tmp : max;
+			min = tmp <= min ? tmp : min;
+		}
+		System.out.println(max + " " + min);
+	}
+}
