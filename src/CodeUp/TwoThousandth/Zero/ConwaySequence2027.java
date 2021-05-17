@@ -1,4 +1,4 @@
-package CodeUp.TwoThousandth.One;
+package CodeUp.TwoThousandth.Zero;
 
 import java.io.BufferedReader;
 import java.io.IOException;

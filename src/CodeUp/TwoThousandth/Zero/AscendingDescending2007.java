@@ -1,4 +1,4 @@
-package CodeUp.TwoThousandth.One;
+package CodeUp.TwoThousandth.Zero;
 
 import java.io.InputStreamReader;
 import java.util.Arrays;

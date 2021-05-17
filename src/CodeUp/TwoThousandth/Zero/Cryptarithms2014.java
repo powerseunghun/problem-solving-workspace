@@ -1,4 +1,4 @@
-package CodeUp.TwoThousandth.One;
+package CodeUp.TwoThousandth.Zero;
 
 public class Cryptarithms2014 {
 	public static void main(String[] args) {
