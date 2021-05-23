@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class ChainCrazyArcade2708 {
+public class ChainCrazyArcade2709 {
 	static int x2 = 0, y2 = 0;
 	static char dir = 'n';
 	static int cnt = 0;
