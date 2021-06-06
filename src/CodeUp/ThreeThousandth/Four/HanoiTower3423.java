@@ -17,7 +17,6 @@ public class HanoiTower3423 {
 				countLimit += 1;
 			}
 		}
-		
 		System.out.println(sum);
 	}
 }
