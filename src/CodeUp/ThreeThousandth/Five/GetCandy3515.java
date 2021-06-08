@@ -7,21 +7,24 @@ import java.util.Arrays;
 
 public class GetCandy3515 {
 	static int[] arr = null;
+	static int max = 0;
 	static void bt(int N, int depth, int[][] candy, boolean[] check) {
 		if (N == depth) {
+			int sum = 0;
 			for (int i = 0; i < arr.length; i++) {
-				System.out.print(arr[i] + " ");
+//				System.out.print(arr[i] + " ");
+				sum += arr[i];
 			}
-			System.out.println();
+			max = max >= sum ? max : sum;
 			return;
 		}
 		
 		for (int j = 0; j < candy[depth].length; j++) {
+			boolean check2[] = check.clone();
 			if (!check[j]) {
 				arr[j] = candy[depth][j];
-				check[j] = true;
-				System.out.println("HH");
-				bt(N, depth+1, candy, check.clone());
+				check2[j] = true;
+				bt(N, depth+1, candy, check2);
 			}
 		}
 	}
@@ -44,11 +47,7 @@ public class GetCandy3515 {
 				candy[i][j] = Integer.parseInt(tmp.split(" ")[j]);
 			}
 		}
-		
 		bt(N, 0, candy, check);
-//		for (int i = 0; i < candy[0].length; i++) {
-//		}
-		
-		System.out.println("E");
+		System.out.println(max);
 	}
 }
