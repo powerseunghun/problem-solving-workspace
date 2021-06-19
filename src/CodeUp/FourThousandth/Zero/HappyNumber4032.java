@@ -7,19 +7,35 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HappyNumber4032 {
+	static Map<Integer, Integer> map = new HashMap<>();
+	static int getSquare(int n) {
+		return n * n;
+	}
 	static boolean check(int n) {
-		// check logic
-		return false;
+		int value = 0, tmp = n;
+		while(value != 1) {
+			value = 0;
+			while (tmp != 0) {
+				value += getSquare(tmp % 10);
+				tmp /= 10;
+			}
+			if (map.containsKey(value)) {
+				return false;
+			}
+			else map.put(value, 1);
+			tmp = value;
+		}
+		return true;
 	}
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(br.readLine());
-		Map<Integer, Integer> map = new HashMap<>();
-		int[] squares = new int[10];
-		for (int i = 0; i < squares.length; i++) {
-			squares[i] = i * i;
-		}
-		map.clear();
 		
+		for (int i = n; i >= 1; i--) {
+			if (check(i)) {
+				System.out.println(i);
+				return;
+			}
+		}
 	}
 }
