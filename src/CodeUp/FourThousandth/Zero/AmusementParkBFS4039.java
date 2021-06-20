@@ -45,8 +45,10 @@ class loc {
 public class AmusementParkBFS4039 {
 	static int[][] arr = null;
 	static int[][] counted = null;
-	static int[] dirX = {-1, 0, 1, 0};
-	static int[] dirY = {0, -1, 0, 1};
+//	static int[] dirX = {-1, 0, 1, 0};
+//	static int[] dirY = {0, -1, 0, 1};
+	static int[] dirX = {0, 1, -1, 0};
+	static int[] dirY = {1, 0, 0, -1};
 	static boolean checkRange(int x, int y, int n, int m) {
 		if (x < 0 || x == n || y < 0 || y == m) {
 			return false;
@@ -57,6 +59,7 @@ public class AmusementParkBFS4039 {
 		Queue<loc> q = new LinkedList<>();
 		
 		loc tmp = new loc(x, y, arr[x][y]);
+//		arr[x][y] = 0;
 		q.add(tmp);
 		counted[tmp.getX()][tmp.getY()] = 1;
 		while (!q.isEmpty()) {
@@ -67,8 +70,8 @@ public class AmusementParkBFS4039 {
 			for (int i = 0; i < 4; i++) {
 				int tx = tmp.getX() + dirX[i];
 				int ty = tmp.getY() + dirY[i];
-				
 				if (checkRange(tx, ty, n, m) && counted[tx][ty] == 0) {
+//					if (arr[tx][ty] == 0) continue;
 					loc c = new loc(tx, ty, arr[tx][ty]);
 					if (Math.abs(tmp.getH() - c.getH()) < 2) {
 						q.add(c);
