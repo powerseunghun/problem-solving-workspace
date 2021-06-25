@@ -35,17 +35,6 @@ public class GetRank4067 {
 				}
 			}
 		}
-		
 		System.out.println(rank[m-1]);
-		for (int i = 0; i < rank.length; i++) {
-			System.out.print(rank[i] + " ");
-		}
-		System.out.println();
-		for (int i = 0; i < arr.length; i++) {
-			for (int j = 0; j < arr[i].length; j++) {
-				System.out.print(arr[i][j] + " ");
-			}
-			System.out.println();
-		}
 	}
 }
