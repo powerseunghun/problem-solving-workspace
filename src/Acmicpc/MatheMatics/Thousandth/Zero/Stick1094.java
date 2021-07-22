@@ -12,7 +12,6 @@ public class Stick1094 {
 		for (int i = 0; i < X.length(); i++) {
 			if (X.charAt(i)=='1') count++;
 		}
-		
 		System.out.println(count);
 	}
 }
