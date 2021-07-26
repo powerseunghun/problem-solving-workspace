@@ -20,5 +20,10 @@ public class VerticalRead10798 {
 				System.out.print(strs[j].charAt(i));
 			}
 		}
+		// 79 + 13 = 92
+		// 92 -> 66
+		// 90 + 13 = 103
+		// 103 -> 77 
+		// max = 90 102
 	}
 }
