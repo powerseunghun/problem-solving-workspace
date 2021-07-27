@@ -22,12 +22,26 @@ public class CupHolder2810 {
 					con = false;
 					sb.append("L*");
 				}
-				else con = true;
+				else {
+					sb.append("L");
+					con = true;
+				}
 				break;
 			}
 		}
-		for (int i = 0; i < sb.toString().length(); i++) {
-			if (sb.toString().charAt(i) == '*') count++;
+		for (int i = 0; i < sb.toString().length()-1; i++) {
+			seat = sb.toString();
+			if (seat.charAt(i) != '*') {
+				if (seat.charAt(i-1) == '*') {
+					sb.deleteCharAt(i-1);
+					i--;
+					count++;
+				}
+				else if (seat.charAt(i+1) == '*') {
+					sb.deleteCharAt(i+1);
+					count++;
+				}
+			}
 		}
 		
 		System.out.println(count);
