@@ -25,10 +25,11 @@ public class NumericSystemChange2745 {
 
 		for (int i = s.length()-1, idx = 1; i >= 0; i--) {
 			val = map.get(s.charAt(i));
-			if (i == s.length()-1) {
-				sum += val;
-			}
-			else sum += val * Math.pow(B, idx++);
+			sum += i == s.length()-1 ? val : val * Math.pow(B, idx++);
+//			if (i == s.length()-1) {
+//				sum += val;
+//			}
+//			else sum += val * Math.pow(B, idx++);
 		}
 		System.out.println(sum);
 	}
