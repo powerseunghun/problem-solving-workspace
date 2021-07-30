@@ -1,4 +1,4 @@
-package Acmicpc.DataStructure.FourThousandth.Nine;
+package Acmicpc.GraphTheory.FourThousandth.Nine;
 
 import java.io.BufferedReader;
 import java.io.IOException;

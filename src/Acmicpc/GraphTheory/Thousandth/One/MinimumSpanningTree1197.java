@@ -1,4 +1,4 @@
-package Acmicpc.DataStructure.Thousandth.One;
+package Acmicpc.GraphTheory.Thousandth.One;
 
 import java.io.BufferedReader;
 import java.io.IOException;

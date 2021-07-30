@@ -1,4 +1,4 @@
-package Acmicpc.DataStructure.TwoThousandth.Five;
+package Acmicpc.GraphTheory.TwoThousandth.Five;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package Acmicpc.DataStructure;
+package Acmicpc.GraphTheory;
 
 import java.io.InputStreamReader;
 
