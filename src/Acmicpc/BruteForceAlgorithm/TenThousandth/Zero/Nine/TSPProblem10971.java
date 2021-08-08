@@ -1,0 +1,63 @@
+package Acmicpc.BruteForceAlgorithm.TenThousandth.Zero.Nine;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class TSPProblem10971 {
+	static int[][] w = null;
+	static int[] arr = null;
+	static boolean[] check = null;
+	static int minVal = Integer.MAX_VALUE;
+	static int start = 0;
+	static void dfs(int n, int d, int c) {
+		if (d == w.length-1) {
+			arr[d] = w[c][start];
+			dfs(n, d+1, 0);
+		}
+		
+		if (d >= n) {
+			int sum = 0;
+			for (int i = 0; i < arr.length; i++) {
+				sum += arr[i];
+			}
+			minVal = Math.min(sum, minVal);
+			return;
+		}
+		
+		if (d == 0) {
+			start = c;
+			check[c] = true;
+		}
+		for (int i = 0; i < w[c].length; i++) {
+			if (w[c][i] == 0) continue;
+			if (!check[i]) {
+				arr[d] = w[c][i];
+				check[i] = true;
+				dfs(n, d+1, i);
+				check[i] = false;
+			}
+		}
+	}
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = null;
+		int N = Integer.parseInt(br.readLine());
+		w = new int[N][N];
+		arr = new int[N];
+		check = new boolean[N];
+		
+		for (int i = 0; i < w.length; i++) {
+			st = new StringTokenizer(br.readLine());
+			for (int j = 0; j < w[i].length; j++) {
+				w[i][j] = Integer.parseInt(st.nextToken());
+			}
+		}
+		
+		for (int i = 0; i < w.length; i++) {
+			dfs(N, 0, i);
+		}
+		System.out.println(minVal);
+	}
+}
