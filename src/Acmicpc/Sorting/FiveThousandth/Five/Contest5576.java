@@ -1,4 +1,4 @@
-package Acmicpc.DataStructure.FiveThousandth.Five;
+package Acmicpc.Sorting.FiveThousandth.Five;
 
 import java.io.BufferedReader;
 import java.io.IOException;
