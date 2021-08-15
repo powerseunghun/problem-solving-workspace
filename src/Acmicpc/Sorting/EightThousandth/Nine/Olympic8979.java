@@ -79,7 +79,6 @@ public class Olympic8979 {
 			if (nat[i].getN() == K) {
 				System.out.println(nat[i].getRank());
 			}
-			System.out.println(nat[i].getN() + " : " + nat[i].getGold() + " " + nat[i].getSilver() + " " + nat[i].getBronze() + " " + nat[i].getRank() + "등");
 		}
 	}
 }
