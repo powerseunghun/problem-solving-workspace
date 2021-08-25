@@ -13,7 +13,10 @@ public class CompleteNumber9506 {
 		int n = 0, sum = 0;
 		while (true) {
 			n = Integer.parseInt(br.readLine());
-			if (n == -1) return;
+			if (n == -1) {
+				System.out.print(sb.toString());
+				return;
+			}
 			sum = 0;
 			divs.clear();
 			
@@ -26,7 +29,7 @@ public class CompleteNumber9506 {
 			if (sum == n && divs.size() != 0) {
 				sb.append(n + " = ");
 				for (int i = 0; i < divs.size(); i++) {
-					sb.append(divs.get(i))
+					sb.append(divs.get(i));
 					if (i != divs.size()-1) sb.append(" + ");
 				}
 				sb.append("\n");
@@ -35,6 +38,5 @@ public class CompleteNumber9506 {
 				sb.append(n + " is NOT perfect.\n");
 			}
 		}
-		System.out.print(sb.toString());
 	}
 }
