@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 class Point {
@@ -22,17 +23,17 @@ class Point {
 }
 public class Square1485 {
 	static Point[] ps = null;
-	static ArrayList<Long> dist = new ArrayList<>();
+	static long[] dist = new long[6];
 	static long getLength(Point p1, Point p2) {
 		double t1 = Math.pow(p1.getX()-p2.getX(), 2);
 		double t2 = Math.pow(p1.getY()-p2.getY(), 2);
 		return (long)(t1+t2);
 	}
 	static void makeDistList() {
-		dist.clear();
+		int idx = 0;
 		for (int i = 0; i < 3; i++) {
 			for (int j = i+1; j < 4; j++) {
-				dist.add(getLength(ps[i], ps[j]));
+				dist[idx++] = getLength(ps[i], ps[j]);
 			}
 		}
 	}
@@ -53,9 +54,9 @@ public class Square1485 {
 				ps[j] = new Point(x, y);
 			}
 			makeDistList();
-			Collections.sort(dist);
-			flag1 = dist.get(0) == dist.get(1) && dist.get(2) == dist.get(3);
-			flag2 = dist.get(4) == dist.get(5);
+			Arrays.sort(dist);
+			flag1 = dist[0] == dist[1] && dist[1] == dist[2] && dist[2] == dist[3];
+			flag2 = dist[4] == dist[5];
 			if (flag1 && flag2) sb.append("1\n");
 			else sb.append("0\n");
 		}
