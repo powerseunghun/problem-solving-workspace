@@ -1,4 +1,4 @@
-package SWExpertAcademy.TwoThousandth.Zero;
+package SWExpertAcademy.D1.TwoThousandth.Zero;
 
 import java.io.BufferedReader;
 import java.io.IOException;
