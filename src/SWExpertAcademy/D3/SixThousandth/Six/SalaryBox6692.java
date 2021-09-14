@@ -23,7 +23,6 @@ public class SalaryBox6692 {
 			}
 			sb.append("#" + i + " " + String.format("%.6f\n", sum));
 		}
-		
 		System.out.print(sb.toString());
 	}
 }
