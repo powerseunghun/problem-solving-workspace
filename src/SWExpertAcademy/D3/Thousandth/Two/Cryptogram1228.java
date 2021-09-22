@@ -6,13 +6,13 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class Cryptogram1230 {
+public class Cryptogram1228 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		ArrayList<Integer> list = null;
 		StringBuilder sb = new StringBuilder();
 		StringTokenizer st = null;
-		String com = null;
+		
 		int x = 0, y = 0, s = 0;
 		for (int i = 1; i <= 10; i++) {
 			sb.append("#" + i + " ");
@@ -25,30 +25,12 @@ public class Cryptogram1230 {
 			br.readLine();
 			st = new StringTokenizer(br.readLine());
 			while (st.hasMoreTokens()) {
-				com = st.nextToken();
-				switch(com) {
-				case "I":
-					x = Integer.parseInt(st.nextToken());
-					y = Integer.parseInt(st.nextToken());
-					for (int j = 0, idx=x+j; j < y; j++, idx++) {
-						s = Integer.parseInt(st.nextToken());
-						list.add(idx, s);
-					}
-					break;
-				case "D":
-					x = Integer.parseInt(st.nextToken());
-					y = Integer.parseInt(st.nextToken());
-					for (int j = 0; j < y; j++) {
-						list.remove(x);
-					}
-					break;
-				case "A":
-					y = Integer.parseInt(st.nextToken());
-					for (int j = 0; j < y; j++) {
-						s = Integer.parseInt(st.nextToken());
-						list.add(s);
-					}
-					break;
+				st.nextToken();
+				x = Integer.parseInt(st.nextToken());
+				y = Integer.parseInt(st.nextToken());
+				for (int j = 0, idx=x+j; j < y; j++, idx++) {
+					s = Integer.parseInt(st.nextToken());
+					list.add(idx, s);
 				}
 			}
 			for (int j = 0; j < 10; j++) {
