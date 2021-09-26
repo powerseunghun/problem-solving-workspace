@@ -16,12 +16,10 @@ public class FindWay1219 {
 				check[v] = false;
 			}
 		}
-		
 	}
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
-		String tmp = null;
 		StringTokenizer st = null;
 		int from = 0, to = 0;
 		
