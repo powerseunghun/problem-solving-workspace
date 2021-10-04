@@ -1,4 +1,4 @@
-package LettCode.Ten.Easy;
+package LettCode.Hundred.Easy;
 
 public class P7ReverseInteger {
 	static int reverse(int x) {

@@ -1,4 +1,4 @@
-package LettCode.Ten.Easy;
+package LettCode.Hundred.Easy;
 
 public class P9PalindromeNumber {
 	static boolean isPalindrome(int x) {
