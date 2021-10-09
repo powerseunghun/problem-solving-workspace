@@ -27,7 +27,6 @@ public class P12IntegerToRoman {
         return str;
     }
 	public static void main(String[] args) {
-		mapInit();
-		System.out.println(intToRoman(1994));
+		System.out.println(intToRoman(3999));
 	}
 }
