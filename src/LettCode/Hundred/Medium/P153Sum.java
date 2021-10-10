@@ -6,6 +6,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+// dfs solution range bigger time limit
+// need time improve.. two pointer approach . ?
+
 public class P153Sum {
 	static List<List<Integer>> list = new ArrayList<>();
 	static Set<String> set = new HashSet<>();
