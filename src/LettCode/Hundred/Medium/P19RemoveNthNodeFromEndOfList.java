@@ -22,6 +22,14 @@ public class P19RemoveNthNodeFromEndOfList {
         return head;
     }
 	public static void main(String[] args) {
+		ListNode head = new ListNode(1);
+		head.next = new ListNode(2);
 		
+		ListNode ln = removeNthFromEnd(head, 2);
+		while(ln != null) {
+			System.out.print(ln.val + " ");
+			ln = ln.next;
+		}
+		System.out.println();
 	}
 }
