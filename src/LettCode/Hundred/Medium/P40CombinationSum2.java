@@ -42,15 +42,14 @@ public class P40CombinationSum2 {
 	public static void main(String[] args) {
 		int[] candidates = { 2,5,2,1,2 };
 		int target = 5;
-		List<Integer> l = new ArrayList<>();
 		combinationSum2(candidates, target);
 		
-		for (int i = 0; i < res.size(); i++) {
-			List<Integer> t = res.get(i);
-			for (int j = 0; j < t.size(); j++) {
-				System.out.print(t.get(j) + " ");
-			}
-			System.out.println();
-		}
+		/**
+		 * TLE
+		 * candidates [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+		 * target 27
+		 * candidates [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1] 
+		 * target 30
+		 */
 	}
 }
