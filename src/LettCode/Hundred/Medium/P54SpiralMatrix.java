@@ -10,7 +10,6 @@ public class P54SpiralMatrix {
         int th = 0, d = 1, count = 0;
         
         while (count <  (n*m)) {
-        	System.out.println("count : " + count);
             for (int i = 0; i < m-th; i++) {
                 c += d;
                 list.add(matrix[r][c]);
