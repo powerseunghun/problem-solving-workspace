@@ -1,4 +1,4 @@
-package LettCode.Hundred;
+package LettCode.Hundred.Medium;
 
 import java.io.IOException;
 
