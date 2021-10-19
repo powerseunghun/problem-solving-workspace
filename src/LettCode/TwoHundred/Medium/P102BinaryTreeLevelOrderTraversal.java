@@ -32,5 +32,6 @@ public class P102BinaryTreeLevelOrderTraversal {
         return list;
     }
 	public static void main(String[] args) {
+		
 	}
 }
