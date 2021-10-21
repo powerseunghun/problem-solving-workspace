@@ -79,7 +79,7 @@ public class OrderByDate {
 		String tmp = null;
 		String[] strs = new String[3];
 		DateInfo[] dates = new DateInfo[3];
-		int year = 0, month = 0, day = 0, idx = 0;
+		int year = 0, month = 0, day = 0;
 		
 		for (int i = 0; i < strs.length; i++) {
 			strs[i] = br.readLine();
