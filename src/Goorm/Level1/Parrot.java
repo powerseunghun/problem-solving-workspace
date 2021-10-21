@@ -2,33 +2,39 @@ package Goorm.Level1;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.Arrays;
 
 public class Parrot {
-	static Map<Character, Integer> map = new HashMap<>();
-	static void mapInit() {
-		char[] vowel = {'a', 'e', 'i', 'o', 'u'};
-		for (int i = 0; i < vowel.length; i++) {
-			map.put(vowel[i], 1);
-			map.put((char)(vowel[i]-32), 1);
+	static void printArray(char[][] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				System.out.print(arr[i][j]);
+			}
+			System.out.println();
 		}
 	}
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int N = Integer.parseInt(br.readLine());
-		StringBuilder sb = new StringBuilder();
-		String res = null, tmp = null;
-		mapInit();
+		String input = br.readLine();
+		int N = Integer.parseInt(input.split(" ")[0]);
+		int M = Integer.parseInt(input.split(" ")[1]), d = 0;
+		char[][] arr = new char[N][M];
 		
-		for (int i = 0; i < N; i++) {
-			tmp = br.readLine();
-			res = "";
-			for (int j = 0; j < tmp.length(); j++) {
-				if (map.containsKey(tmp.charAt(j))) res += tmp.charAt(j);
-			}
-			sb.append((res.equals("") ? "???" : res) + "\n");
+		for (int i = 0; i < arr.length; i++) {
+			Arrays.fill(arr[i], '.');
 		}
-		System.out.println(sb.toString());
+		
+		for (int i = 0; i < arr.length; i++) {
+			if (i % 2 != 0) {
+				if (d%2 == 0) arr[i][0] = '#';
+				else arr[i][arr[i].length-1] = '#';
+				continue;
+			}
+			for (int j = 0; j < arr[i].length; j++) {
+				arr[i][j] = '#';
+			}
+			d++;
+		}
+		printArray(arr);
 	}
 }
