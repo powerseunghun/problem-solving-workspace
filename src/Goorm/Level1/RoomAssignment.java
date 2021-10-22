@@ -12,19 +12,18 @@ public class RoomAssignment {
 		int N = Integer.parseInt(tmp.split(" ")[0]);
 		int K = Integer.parseInt(tmp.split(" ")[1]), count = 0;
 		
-		for (int i = 0, s = 0, y = 0; i < N; i++) {
+		for (int i = 0; i < N; i++) {
 			tmp = br.readLine();
-			s = Integer.parseInt(tmp.split(" ")[0]);
-			y = Integer.parseInt(tmp.split(" ")[1]);
-			room[s][y]++;
+			room[Integer.parseInt(tmp.split(" ")[0])][Integer.parseInt(tmp.split(" ")[1])]++;
 		}
 		
-		for (int i = 1; i < room.length; i++) {
-			for (int j = 1; j < room[i].length; j++) {
+		for (int i = 0; i < room.length; i++) {
+			for (int j = 0 ; j < room[i].length; j++) {
 				count += room[i][j] / K;
 				if (room[i][j] % K != 0) count++;
 			}
 		}
+		
 		System.out.println(count);
 	}
 }
