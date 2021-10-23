@@ -7,9 +7,9 @@ import java.util.List;
 
 public class Nptest3 {
 	static int[] arr = new int[8];
-	static boolean[] check = new boolean[8+1];
+	static boolean[] check = new boolean[8 + 1];
 	static List<String> lineList = new ArrayList<String>();
-	
+
 	static void dfs(int n, int d) {
 		if (d >= n) {
 			String str = "";
@@ -19,20 +19,21 @@ public class Nptest3 {
 			lineList.add(str);
 			return;
 		}
-		
+
 		for (int i = 1; i <= 8; i++) {
 			if (!check[i]) {
 				check[i] = true;
 				arr[d] = i;
-				dfs(n, d+1);
+				dfs(n, d + 1);
 				check[i] = false;
 			}
 		}
 	}
+
 	public static void main(String[] args) {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		dfs(8, 0);
-		String[] conflictList = {"53", "43", "47", "36", "35", "34", "74", "63"};
+		String[] conflictList = { "53", "43", "47", "36", "35", "34", "74", "63" };
 		int count = 0;
 		boolean flag = true;
 		for (int i = 0; i < lineList.size(); i++) {
@@ -43,10 +44,10 @@ public class Nptest3 {
 					break;
 				}
 			}
-			if (flag) count++;
+			if (flag)
+				count++;
 		}
 		System.out.println(lineList.size());
 		System.out.println(count);
 	}
-	
 }

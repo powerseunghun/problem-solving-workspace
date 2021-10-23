@@ -1,4 +1,4 @@
-package LettCode.Hundred.Medium;
+package Goorm.Level2;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

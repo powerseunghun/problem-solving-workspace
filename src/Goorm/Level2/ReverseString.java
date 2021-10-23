@@ -1,4 +1,4 @@
-package LettCode.Level2;
+package Goorm.Level2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
