@@ -37,7 +37,6 @@ public class RoundTheCountry {
 			
 			sum += (avg - Math.min(val1, val2));
 		}
-		
 		System.out.println(sum);
 	}
 }
