@@ -13,7 +13,7 @@ public class NumericSystem {
 		for (char c = '0'; c <= '9'; c++) {
 			map.put(val++, c);
 		}
-		for (char c = 'A'; c <= 'F'; c++) {
+		for (char c = 'A'; c <= 'K'; c++) {
 			map.put(val++, c);
 		}
 	}
