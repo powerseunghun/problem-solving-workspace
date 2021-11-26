@@ -11,7 +11,7 @@ public class PrimeCycle {
 	static boolean[] check = null;
 	static int[] prime = new int[40];
 	static List<int[]> list = new ArrayList<>();
-	static void bt(int n, int d) {
+	static void dfs(int n, int d) {
 		if (d >= n) {
 			//last check end,first
 			if (prime[arr[0]+arr[n-1]] != 0) {
@@ -24,7 +24,7 @@ public class PrimeCycle {
 			if (prime[arr[d-1] + i] != 0 && !check[i]) {
 				arr[d] = i;
 				check[i] = true;
-				bt(n, d+1);
+				dfs(n, d+1);
 				check[i] = false;
 			}
 		}
@@ -50,7 +50,7 @@ public class PrimeCycle {
 		check[1] = true;
 		
 		primeArrInit();
-		bt(N, 1);
+		dfs(N, 1);
 		for (int i = 0; i < list.size(); i++) {
 			arr = list.get(i);
 			for (int j = 0; j < arr.length; j++) {
