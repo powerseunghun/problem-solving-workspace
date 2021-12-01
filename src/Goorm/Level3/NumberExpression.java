@@ -43,5 +43,7 @@ public class NumberExpression {
 		List<Integer> list = new ArrayList<>();
 		
 		search(N, 0, list);
+		
+		System.out.println(expressCount);
 	}
 }
