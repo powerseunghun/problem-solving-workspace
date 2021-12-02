@@ -1,7 +1,6 @@
 package Programmers.level3;
 
 public class Network {
-	static int count = 0;
 	static boolean[] check = null;
 	static void func(int v, int[][] computers) {
 		check[v] = true;
