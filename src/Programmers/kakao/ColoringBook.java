@@ -11,6 +11,8 @@ public class ColoringBook {
 		count++;
 		check[x][y] = true;
 		// 원본 배열 훼손 안해야하더라 이유는 모름
+		// -- 추가 이유 알아냄 왜그냐면 테스트 케이스 하나로 여러 개의 케이스 채점
+		// 그렇다면 원본이 훼손되면 문제 생김
 		// picture[x][y] = -1;
 		
 		for (int i = 0, nx = 0, ny = 0; i < dirX.length; i++) {
