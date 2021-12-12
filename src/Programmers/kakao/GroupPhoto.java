@@ -37,6 +37,7 @@ public class GroupPhoto {
         		end = Math.max(f1, f2);
         		interval = str.substring(start, end).length();
         		need = data[j].charAt(4) - '0';
+        		
         		switch(data[j].charAt(3)) {
         		case '=':
         			if (interval == need) flag = true;
