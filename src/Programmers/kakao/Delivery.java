@@ -10,14 +10,6 @@ public class Delivery {
         	time[s][e] = time[s][e] == 0 ? road[i][2] : Math.min(road[i][2], time[s][e]);
         	time[e][s] = time[e][s] == 0 ? road[i][2] : Math.min(road[i][2], time[e][s]);
         }
-        
-        for (int i = 0; i < time.length; i++) {
-        	for (int j = 0; j < time[i].length; j++) {
-        		System.out.print(time[i][j] + " ");
-        	}
-        	System.out.println();
-        }
-        System.out.println("\n");
         for (int k = 0; k < N; k++) {
         	for (int i = 0; i < N; i++) {
         		for (int j = 0; j < N; j++) {
@@ -28,13 +20,6 @@ public class Delivery {
 					}
         		}
         	}
-        }
-        
-        for (int i = 0; i < time.length; i++) {
-        	for (int j = 0; j < time[i].length; j++) {
-        		System.out.print(time[i][j] + " ");
-        	}
-        	System.out.println();
         }
         for (int el : time[0]) {
         	answer = el <= K ? answer + 1 : answer;
