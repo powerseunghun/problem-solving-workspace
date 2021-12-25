@@ -2,7 +2,7 @@ package Programmers.level2;
 
 public class MultiLCM {
 	static int GCD(int a, int b) {
-		if (b == 0)return a;
+		if (b == 0) return a;
 		else return GCD(b, a%b);
 	}
 	static int LCM(int a, int b) {
