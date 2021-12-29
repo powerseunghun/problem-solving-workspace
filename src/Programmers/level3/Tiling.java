@@ -1,7 +1,5 @@
 package Programmers.level3;
 
-import test.Solution;
-
 public class Tiling {
 	static int[] dp = new int[60001];
 	static int get(int n) {
