@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 public class LeaveCompany14501 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int N = Integer.parseInt(br.readLine()), max = Integer.MIN_VALUE;
+		int N = Integer.parseInt(br.readLine()), max = 0;
 		int[] T = new int[N+1], P = new int[N+1], dp = new int[N+1];
 		String tmp = null;
 		
@@ -29,7 +29,7 @@ public class LeaveCompany14501 {
 			if (i+T[i] <= N+1) {
 				max = Math.max(max, dp[i]);
 			}
-			if (i + T[i] >= (N+1)) continue;
+			if (i + T[i] > (N+1)) continue;
 			max = Math.max(max, dp[i]);
 		}
 		System.out.println(max);
