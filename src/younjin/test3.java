@@ -16,7 +16,6 @@ public class test3 {
 			System.out.println();
 			return;
 		}
-		// 점 화 식
 		for (int i = idx; i < N; i++) {
 			arr[d] = (i+1);
 			func(N, M, d+1, i+1);
