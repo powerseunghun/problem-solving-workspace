@@ -1,4 +1,4 @@
-package Acmicpc.OrderSubmit.TenThousandth;
+package Acmicpc.OrderSubmit.TenThousandth.Four.Two;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
