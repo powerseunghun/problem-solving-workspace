@@ -1,4 +1,4 @@
-package Acmicpc.OrderSubmit.TenThousandth.Five;
+package Acmicpc.OrderSubmit.TenThousandth.Five.Nine;
 
 import java.io.BufferedReader;
 import java.io.IOException;
