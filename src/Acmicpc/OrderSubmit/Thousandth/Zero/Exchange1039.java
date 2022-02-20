@@ -60,7 +60,7 @@ public class Exchange1039 {
 			for (int i = 0; i < tmp.getStr().length()-1; i++) {
 				for (int j = i+1, next = 0; j < tmp.getStr().length(); j++) {
 					next = getNext(tmp.getStr(), i, j);
-					if (!check[next][tmp.getN()+1] && next != -1) {
+					if (next != -1 && !check[next][tmp.getN()+1]) {
 						check[next][tmp.getN()+1] = true;
 						q.add(new Info(next+"", tmp.getN()+1));
 					}
@@ -74,7 +74,7 @@ public class Exchange1039 {
 		String N = tmp.split(" ")[0];
 		int K = Integer.parseInt(tmp.split(" ")[1]);
 		
-		check = new boolean[1000001][K+1];
+		check = new boolean[1000001][11];
 		bfs(N, K);
 		System.out.println(max);
 	}
