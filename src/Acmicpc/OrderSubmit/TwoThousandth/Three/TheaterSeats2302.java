@@ -11,7 +11,7 @@ public class TheaterSeats2302 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());
-		int M = Integer.parseInt(br.readLine()), cnt = 1, fix = 0, tmp = 0;
+		int M = Integer.parseInt(br.readLine()), cnt = 1, fix = 0;
 		arr = new int[N+1];
 		check = new boolean[N+2];
 		
@@ -19,11 +19,6 @@ public class TheaterSeats2302 {
 		for (int i = 2; i < arr.length; i++) {
 			arr[i] = arr[i-1] + arr[i-2];
 		}
-		
-//		for (int i = 1; i < arr.length; i++) {
-//			System.out.print(arr[i] + " ");
-//		}
-//		System.out.println();
 		
 		for (int i = 0; i < M; i++) {
 			fix = Integer.parseInt(br.readLine());
@@ -40,7 +35,6 @@ public class TheaterSeats2302 {
 			n++;
 		}
 		System.out.println(cnt);
-		
 		br.close();
 	}
 }
