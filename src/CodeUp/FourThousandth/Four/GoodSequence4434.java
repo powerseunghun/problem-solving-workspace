@@ -36,5 +36,15 @@ public class GoodSequence4434 {
 		int n = Integer.parseInt(br.readLine());
 		
 		bt(n, 0, "");
+		
+//		simple coindg input 8 = 12131213 bad sequence
+//		for (int i = 0; i < arr.length; i++) {
+//			arr[i] = i % 2 == 0 ? 1 : i == 1 ? 2 : arr[i-2] == 3 ? 2 : 3;
+//		}
+//		for (int el : arr) {
+//			System.out.print(el);
+//		}
+		
+	
 	}
 }
