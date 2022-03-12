@@ -3,6 +3,7 @@ package Acmicpc.OrderSubmit.SixThousandth.Zero;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -49,23 +50,23 @@ public class LaserCommunication6087 {
 	static int[] dirY = {-1, 0, 1, 0};
 	static char[][] arr = null;
 	static int[][] laser = null;
-	static boolean[][] check = null;
 	static int bfs() {
+		int res = Integer.MAX_VALUE;
 		Queue<Pos> q = new LinkedList<>();
 		q.add(new Pos(laserX, laserY, 0, null));
-		check[laserX][laserY] = true;
+		laser[laserX][laserY] = 0;
 		
 		while (!q.isEmpty()) {
 			Pos tmp = q.poll();
 			if (arr[tmp.getX()][tmp.getY()] == 'C' && tmp.getPrevPos() != null) {
-				return tmp.getL();
+				res = Math.min(res, tmp.getL());
 			}
 			
 			for (int i = 0, nx = 0, ny = 0, l = tmp.getL(); i < dirX.length; i++, l = tmp.getL()) {
 				nx = tmp.getX() + dirX[i];
 				ny = tmp.getY() + dirY[i];
 				if (nx < 0 || ny < 0 || nx > arr.length-1 || ny > arr[nx].length-1) continue;
-				if (arr[nx][ny] == '*' || check[nx][ny]) continue;
+				if (arr[nx][ny] == '*' || laser[nx][ny] <= l) continue;
 				
 				if (tmp.getPrevPos() != null) {
 					int prevX = tmp.getPrevPos().getX();
@@ -74,28 +75,40 @@ public class LaserCommunication6087 {
 						l++;
 					}
 				}
-				check[nx][ny] = true;
+//				System.out.println("nx : " + nx + ", ny : " + ny + ", l : " + l);
+//				try {
+//					Thread.sleep(500);
+//				} catch (InterruptedException e) {
+//					// TODO Auto-generated catch block
+//					e.printStackTrace();
+//				}
+				laser[nx][ny] = Math.min(laser[nx][ny], l);
 				q.add(new Pos(nx, ny, l, tmp));
 			}
 		}
-		return 0;
+		return res;
 	}
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String tmp = br.readLine();
+		boolean posFlag = false;
 		int W = Integer.parseInt(tmp.split(" ")[0]);
 		int H = Integer.parseInt(tmp.split(" ")[1]);
 		arr = new char[H][W];
-		check = new boolean[H][W];
 		laser = new int[H][W];
+		
+		for (int i = 0; i < laser.length; i++) {
+			Arrays.fill(laser[i], Integer.MAX_VALUE);
+		}
 		
 		for (int i = 0; i < arr.length; i++) {
 			tmp = br.readLine();
 			for (int j = 0; j < arr[i].length; j++) {
 				arr[i][j] = tmp.charAt(j);
-				if (arr[i][j] == 'C') {
-					laserX = laserX == 0 ? i : laserX;
-					laserY = laserY == 0 ? j : laserY;
+				if (arr[i][j] == 'C' && !posFlag) {
+					laserX = i;
+					laserY = j;
+					posFlag = true;
 				}
 			}
 		}
