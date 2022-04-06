@@ -42,7 +42,6 @@ public class DeliciousFood2961 {
 			arr[i][0] = Integer.parseInt(tmp.split(" ")[0]);
 			arr[i][1] = Integer.parseInt(tmp.split(" ")[1]);
 		}
-		
 		dfs(N, 0);
 		System.out.println(res);
 		br.close();
