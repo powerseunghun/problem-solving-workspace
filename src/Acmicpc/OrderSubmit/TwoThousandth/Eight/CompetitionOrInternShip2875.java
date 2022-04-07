@@ -1,4 +1,4 @@
-package Acmicpc.OrderSubmit.TwoThousandth;
+package Acmicpc.OrderSubmit.TwoThousandth.Eight;
 
 import java.io.BufferedReader;
 import java.io.IOException;
