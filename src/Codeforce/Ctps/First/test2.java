@@ -3,24 +3,22 @@ package Codeforce.Ctps.First;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class test {
+public class test2 {
 	static boolean check(String str, String pattern) {
-		int strIdx = 0, patternIdx = 0;
-		StringBuilder sb1 = new StringBuilder(str);
-		StringBuilder sb2 = new StringBuilder(pattern);
+		int i = 0, patternIdx = 0, idx = 0;
+		int[] idxs = new int[pattern.length()];
 		
-		while (strIdx < sb1.toString().length() && patternIdx < pattern.length()) {
-			if (sb1.charAt(strIdx) != sb2.charAt(patternIdx)) {
-				sb1.replace(strIdx, strIdx+1, "");
-			}
-			else {
+		for (i = 0; i < str.length(); i++) {
+			if (str.charAt(i) == pattern.charAt(patternIdx)) {
+				idxs[idx++] = i;
 				patternIdx++;
-				strIdx++;
+				if (idx == pattern.length()) break;
 			}
 		}
-		if (sb1.toString().length() < sb2.toString().length()) return false;
-		for (int i = pattern.length(); i < sb1.toString().length(); i++) {
-			if (pattern.contains(sb1.toString().charAt(i)+"")) return false;
+		if (idx < pattern.length()) return false;
+		
+		for (i = i+1; i < str.length(); i++) {
+			if (pattern.contains(str.charAt(i)+"")) return false;
 		}
 		return true;
 	}
