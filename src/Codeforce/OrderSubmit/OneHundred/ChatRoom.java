@@ -1,4 +1,4 @@
-package Codeforce.OrderSubmit.OneThousandth;
+package Codeforce.OrderSubmit.OneHundred;
 
 import java.io.InputStreamReader;
 import java.util.Arrays;
