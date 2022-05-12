@@ -2,7 +2,6 @@ package Acmicpc.As.B4.TenThousandth.Six.One;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Date;
 import java.util.StringTokenizer;
 
 public class CalcAge16199 {
@@ -22,6 +21,21 @@ public class CalcAge16199 {
 		}
 		calcAge = age2[0] - age1[0];
 		
-		// if (age1[0] == age2[0]) 
+		if (age1[0] == age2[0]) {
+			System.out.println(calcAge);
+		}
+		else {
+			if (age1[1] > age2[1]) {
+				System.out.println(calcAge-1);
+			}
+			else if (age1[1] == age2[1]) {
+				if (age2[2] >= age1[2]) System.out.println(calcAge);
+				else System.out.println(calcAge-1);
+			}
+			else System.out.println(calcAge);
+		}
+		System.out.println(calcAge+1);
+		System.out.println(calcAge);
+		br.close();
 	}
 }
