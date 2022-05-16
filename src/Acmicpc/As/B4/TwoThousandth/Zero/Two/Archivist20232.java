@@ -7,8 +7,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Archivist20232 {
-	static String[] strs = {"ITMO", "SpbSU", "SpbSU", "ITMO", "ITMO", "SpbSU", "ITMO", "ITMO", "ITMO", "ITMO", "ITMO",  "PetrSU, ITMO", 
-			"SPbSU", "SpbSU", "ITMO", "ITMO", "ITMO", "ITMO", "SPbSU", "ITMO", "ITMO", "ITMO", "ITMO", "SPbSU", "ITMO" };
+	static String[] strs = {"ITMO", "SPbSU", "SPbSU", "ITMO", "ITMO", "SPbSU", "ITMO", "ITMO", "ITMO", "ITMO", "ITMO",  "PetrSU, ITMO", 
+			"SPbSU", "SPbSU", "ITMO", "ITMO", "ITMO", "ITMO", "SPbSU", "ITMO", "ITMO", "ITMO", "ITMO", "SPbSU", "ITMO" };
 	static Map<Integer, String> map = new HashMap<>();
 	static void mapInit() {
 		for (int i = 1995; i <= 2019; i++) {
