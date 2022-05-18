@@ -19,6 +19,5 @@ public class ÄpplenOchPäron21354 {
 		else if (arr[1] > arr[0]) System.out.println("Petra");
 		else System.out.println("lika");
 		br.close();
-		
 	}
 }
