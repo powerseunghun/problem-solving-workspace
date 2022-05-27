@@ -26,7 +26,7 @@ public class ThreeNumber2985 {
 		}
 		else if (A/B == C) {
 			com1 = '/';
-			com2 = '-';
+			com2 = '=';
 		}
 		else if (A == (B+C)) {
 			com1 = '=';
