@@ -13,7 +13,7 @@ public class PairSum5217 {
 		while (t-- > 0) {
 			n = Integer.parseInt(br.readLine());
 			cnt = 0;
-			sb.append("Pairse for " + n + ": ");
+			sb.append("Pairs for " + n + ": ");
 			for (int i = 1; i <= n; i++) {
 				for (int j = i+1; j <= n; j++) {
 					if (i+j == n) {
