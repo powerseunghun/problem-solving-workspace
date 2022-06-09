@@ -18,8 +18,8 @@ public class TunnelEntranceExit5612 {
 			out = Integer.parseInt(tmp.split(" ")[1]);
 			m = m+in-out;
 			
-			max = (m < 0) ? 0 : Math.max(max, max);
-			if (result == 0) break;
+			max = (m < 0) ? 0 : Math.max(max, m);
+			if (max == 0) break;
 		}
 		
 		System.out.println(max);
