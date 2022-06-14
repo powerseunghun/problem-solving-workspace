@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
-public class iBMMinus6321 {
+public class IBMMinus6321 {
 	static Map<Character, Character> map = new HashMap<>();
 	static void mapInit() {
 		for (char c = 'A'; c <= 'Z'; c++) {
