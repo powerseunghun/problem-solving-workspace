@@ -15,7 +15,6 @@ public class Gauß7523 {
 		int t = Integer.parseInt(br.readLine()), idx = 1;
 		String tmp = null;
 		
-		// 22 * (-22 + 21)
 		while (t-- > 0) {
 			tmp = br.readLine();
 			n = Long.parseLong(tmp.split(" ")[0]);
