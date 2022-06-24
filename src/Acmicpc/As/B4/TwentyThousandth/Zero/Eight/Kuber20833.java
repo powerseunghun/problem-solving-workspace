@@ -1,6 +1,5 @@
 package Acmicpc.As.B4.TwentyThousandth.Zero.Eight;
 
-import java.awt.image.BufferedImageFilter;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
