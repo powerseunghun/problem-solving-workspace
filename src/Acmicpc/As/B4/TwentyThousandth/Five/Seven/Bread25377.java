@@ -15,7 +15,7 @@ public class Bread25377 {
 			A = Integer.parseInt(tmp.split(" ")[0]);
 			B = Integer.parseInt(tmp.split(" ")[1]);
 			
-			min = A < B ? Math.min(min, B) : min;
+			min = A <= B ? Math.min(min, B) : min;
 		}
 		
 		System.out.println(min == Integer.MAX_VALUE ? -1 : min);
