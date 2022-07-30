@@ -27,7 +27,6 @@ public class FencePainting11970 {
 			}
 		}
 		
-		
 		System.out.println(flag ? cnt-1 : cnt-2);
 		br.close();
 	}
