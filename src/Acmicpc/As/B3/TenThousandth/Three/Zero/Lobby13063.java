@@ -7,7 +7,6 @@ import java.io.InputStreamReader;
 public class Lobby13063 {
 	static int calc(int n, int m, int k) {
 		int mss = n-(m+k);
-		
 		for (int i = 0; i <= mss; i++) {
 			if (m+i > k+(mss-i)) return i;
 		}
