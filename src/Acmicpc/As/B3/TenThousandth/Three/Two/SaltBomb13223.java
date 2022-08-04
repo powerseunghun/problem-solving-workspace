@@ -28,6 +28,7 @@ public class SaltBomb13223 {
 		}
 		if (time < 0) time += 86400;
 		time %= 86400;
+		if (time == 0) time = 86400;
 		
 		System.out.println(String.format("%02d:%02d:%02d", time/3600, time%3600/60, time%60));
 		br.close();
