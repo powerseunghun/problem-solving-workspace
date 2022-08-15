@@ -8,6 +8,7 @@ public class ZOAC23971 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String tmp = br.readLine();
+		
 		int H = Integer.parseInt(tmp.split(" ")[0]);
 		int W = Integer.parseInt(tmp.split(" ")[1]);
 		int N = Integer.parseInt(tmp.split(" ")[2]);
