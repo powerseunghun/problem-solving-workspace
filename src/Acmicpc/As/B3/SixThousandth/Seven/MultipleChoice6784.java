@@ -20,7 +20,6 @@ public class MultipleChoice6784 {
 			if (br.readLine().equals(str.charAt(i)+"")) cnt++;
 		}
 		
-		
 		System.out.println(cnt);
 		br.close();
 	}
