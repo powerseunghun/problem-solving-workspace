@@ -10,7 +10,6 @@ public class YProgramming14568 {
 		int N = Integer.parseInt(br.readLine());
 		int count = 0;
 		
-		// 택희,영훈, 남규
 		for (int i = 1; i <= N; i++) {
 			for (int j = N-i, k = 0; j >= 1; j--) {
 				if (i % 2 != 0) continue;
