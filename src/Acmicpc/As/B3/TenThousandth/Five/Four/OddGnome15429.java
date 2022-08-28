@@ -8,7 +8,6 @@ import java.util.StringTokenizer;
 public class OddGnome15429 {
 	static int[] arr = null;
 	static int func() {
-		int idx = 0;
 		for (int i = 1; i < arr.length; i++) {
 			if (arr[i]-1 == arr[i-1]) continue;
 			return i+1;
