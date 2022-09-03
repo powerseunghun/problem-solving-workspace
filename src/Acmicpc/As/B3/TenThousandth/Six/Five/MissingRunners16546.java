@@ -16,7 +16,7 @@ public class MissingRunners16546 {
 		
 		while (st.hasMoreTokens()) {
 			val = Integer.parseInt(st.nextToken());
-			map.put(val, map.getOrDefault(val, 0)+1);
+			map.put(val, map.getOrDefault(val, 1)+1);
 		}
 		
 		for (int i = 1; i <= N; i++) {
