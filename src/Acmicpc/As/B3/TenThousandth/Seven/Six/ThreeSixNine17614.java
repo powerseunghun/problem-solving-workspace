@@ -1,4 +1,4 @@
-package Acmicpc.As.B3.TenThousandth.Six;
+package Acmicpc.As.B3.TenThousandth.Seven.Six;
 
 import java.io.BufferedReader;
 import java.io.IOException;
