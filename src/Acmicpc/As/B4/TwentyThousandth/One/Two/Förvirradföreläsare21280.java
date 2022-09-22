@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 public class Förvirradföreläsare21280 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int N = Integer.parseInt(br.readLine()), tmp = 0, cur = 0, val = 0;
+		int N = Integer.parseInt(br.readLine()), cur = 0, val = 0;
 		int res1 = 0, res2 = 0;
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
