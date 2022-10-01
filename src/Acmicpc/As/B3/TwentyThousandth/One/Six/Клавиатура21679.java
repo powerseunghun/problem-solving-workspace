@@ -25,7 +25,6 @@ public class Клавиатура21679 {
 		}
 		
 		for (int i = 1; i < arr.length; i++) {
-			System.out.println(arr[i]);
 			sb.append((arr[i] < 0 ? "yes" : "no") + "\n");
 		}
 		
