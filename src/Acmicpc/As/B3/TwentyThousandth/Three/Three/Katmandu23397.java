@@ -18,7 +18,7 @@ public class Katmandu23397 {
 			flag = y1-y0 >= T ? true : flag;
 			y0 = y1;
  		}
-		flag = y1-y0 >= T ? true : flag;
+		flag = D-y0 >= T ? true : flag;
 		
 		System.out.println(flag ? "Y" : "N");
 		br.close();
