@@ -1,4 +1,4 @@
-package Acmicpc.As.B3.TwentyThousandth;
+package Acmicpc.As.B3.TwentyThousandth.Four.Two;
 
 import java.io.BufferedReader;
 import java.io.IOException;
