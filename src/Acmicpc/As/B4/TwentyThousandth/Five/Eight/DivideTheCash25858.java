@@ -18,7 +18,6 @@ public class DivideTheCash25858 {
 			arr[i] = Integer.parseInt(br.readLine());
 			sum += arr[i];
 		}
-		
 		for (int i = 0; i < arr.length; i++) {
 			sb.append((int)(p * (double)arr[i]/sum) + "\n");
 		}
