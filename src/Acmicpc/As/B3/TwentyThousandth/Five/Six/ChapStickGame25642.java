@@ -18,8 +18,6 @@ public class ChapStickGame25642 {
 		while (arr[t] < 5) {
 			arr[t==0 ? 1 : 0] += arr[t];
 			t = t == 0 ? 1 : 0;
-			System.out.println(arr[0] + " " + arr[1]);
-			System.out.println("t : " + t);
 		}
 		
 		System.out.println(arr[0] >= 5 ? "yj" : "yt");
