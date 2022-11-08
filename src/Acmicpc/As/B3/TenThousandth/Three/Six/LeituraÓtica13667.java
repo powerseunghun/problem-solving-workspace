@@ -26,7 +26,7 @@ public class LeituraÓtica13667 {
 					arr[i][j] = Integer.parseInt(tmp.split(" ")[j]);
 					if (arr[i][j] <= 127) {
 						if (flag) {
-							idx = 6;
+							idx = arr[0].length+1;
 							break;
 						}
 						flag = true;
