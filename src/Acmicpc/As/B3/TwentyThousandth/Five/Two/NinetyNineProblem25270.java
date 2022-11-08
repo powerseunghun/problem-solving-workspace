@@ -25,6 +25,7 @@ public class NinetyNineProblem25270 {
 					res = N-w;
 					break;
 				}
+				w++;
 			}
 		}
 		
