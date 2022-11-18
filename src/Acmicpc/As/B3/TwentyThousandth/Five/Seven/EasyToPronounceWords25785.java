@@ -27,7 +27,6 @@ public class EasyToPronounceWords25785 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String str = br.readLine();
-		
 		mapInit();
 		
 		System.out.println(func(str));
