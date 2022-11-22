@@ -11,7 +11,7 @@ public class BriefcasesFullOfMoney25849 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String tmp = br.readLine();
-		int max = Integer.MIN_VALUE, w = 0, minCnt = Integer.MAX_VALUE;
+		int max = Integer.MIN_VALUE, minCnt = Integer.MAX_VALUE;
 		int res = 0;
 		
 		for (int i = 0; i < arr.length; i++) {
