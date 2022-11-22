@@ -11,23 +11,38 @@ public class BriefcasesFullOfMoney25849 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String tmp = br.readLine();
-		int max = Integer.MIN_VALUE, w = 0, maxCnt = Integer.MAX_VALUE;
+		int max = Integer.MIN_VALUE, w = 0, minCnt = Integer.MAX_VALUE;
+		int res = 0;
 		
 		for (int i = 0; i < arr.length; i++) {
-			arr[i] = idx[i] * Integer.parseInt(tmp.split(" ")[i]);
 			cnts[i] = Integer.parseInt(tmp.split(" ")[i]);
-			System.out.println("arr[i] : " + arr[i] + ", cnts[i] : " + cnts[i]);
+			arr[i] = idx[i] * cnts[i];
+			max = Math.max(arr[i], max);
 		}
 		
 		for (int i = 0; i < arr.length; i++) {
-			if (arr[i] >= max && cnts[i] < maxCnt) {
-				max = arr[i];
-				maxCnt = cnts[i];
-				w = i;
+			if (arr[i] == max) {
+				minCnt = Math.min(minCnt, cnts[i]);
 			}
 		}
 		
-		System.out.println(idx[w]);
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] == max && cnts[i] == minCnt) {
+				res = idx[i];
+				break;
+			}
+		}
+//		for (int i = 0; i < arr.length; i++) {
+//		if (arr[i] >= max && cnts[i] < maxCnt) {
+//			max = arr[i];
+//			maxCnt = cnts[i];
+//			w = i;
+//		}
+//	}
+	
+//		System.out.println(idx[w]);
+//		br.close();
+		System.out.println(res);
 		br.close();
 	}
 }
