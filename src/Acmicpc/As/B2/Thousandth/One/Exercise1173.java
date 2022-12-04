@@ -15,8 +15,6 @@ public class Exercise1173 {
 		int R = Integer.parseInt(tmp.split(" ")[4]);
 		int mb = m, t = 0, ex = 0;
 		
-		// 초기 맥박 m, N분 운동, M을 넘길 수 없고, m보다 낮아지면 안 됨 T 증가. R감
-		
 		for (t = 0; ; t++) {
 			if (m+T > M) break;
 			if (ex == N) break;
