@@ -24,13 +24,11 @@ public class Dice1233 {
 				}
 			}
 		}
-		System.out.println(map);
 		for (Integer i : map.values()) {
 			max = Math.max(i, max);
 		}
 		
 		for (Integer i : map.keySet()) {
-			System.out.println("i : " + i + " , get i : " + map.get(i));
 			if (map.get(i) == max && i < res) {
 				res = i;
 			}
