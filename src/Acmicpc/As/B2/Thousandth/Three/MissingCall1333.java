@@ -3,7 +3,6 @@ package Acmicpc.As.B2.Thousandth.Three;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class MissingCall1333 {
 	static boolean[] arr = null;
