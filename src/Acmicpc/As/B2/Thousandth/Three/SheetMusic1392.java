@@ -19,9 +19,6 @@ public class SheetMusic1392 {
 			if (i == 1) continue;
 			arr[i] += arr[i-1];
 		}
-		
-		// 0 1 2 3 4
-		// 0 2 3 6
 		while (Q-- > 0) {
 			w = Integer.parseInt(br.readLine());
 			for (int i = 0; i < arr.length-1; i++) {
