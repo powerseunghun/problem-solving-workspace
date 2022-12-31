@@ -11,7 +11,6 @@ public class BodyMassIndex6825 {
 		double h = Double.parseDouble(br.readLine());
 		double res = w/Math.pow(h, 2);
 		
-		
 		System.out.println(res > 25 ? "Overweight" : res >= 18.5 ? "Normal weight" : "Underweight");
 		br.close();
 	}
