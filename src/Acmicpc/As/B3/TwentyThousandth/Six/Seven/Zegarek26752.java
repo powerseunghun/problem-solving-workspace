@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class Zegarek26752 {
-	static int[][] arr = null;
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
@@ -17,9 +16,6 @@ public class Zegarek26752 {
 		}
 		t++;
 		
-//		System.out.println(t / 3600);
-//		System.out.println((t-((t/3600)*3600)) / 60);
-//		System.out.println(t % 60);
 		System.out.println(String.format("%02d:%02d:%02d", t/3600==24 ? 0 : t/3600, (t-((t/3600)*3600)) / 60, t%60));
 		br.close();
 	}
