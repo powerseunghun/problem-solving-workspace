@@ -3,28 +3,32 @@ package Acmicpc.As.B3.TwentyThousandth.Zero.Three;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.HashSet;
+import java.util.Set;
 
 public class SimpleTask20359 {
-	static int o = 1, p = 1;
-	static void func(int N) {
-		int res = 0;
-		while (true) {
-			res = (int)(o * Math.pow(2, p));
-			if (res == N) return;
-			if (res > N) {
-				o++;
-				p = 0;
-				continue;
+	static Set<Integer> set = new HashSet<>();
+	static void setInit() {
+		for (int i = 1, val = 0; ; i++) {
+			val = (int) Math.pow(2, i);
+			if (val > 1000000) break;
+			set.add(val);
+		}
+	}
+	static int getP(int N) {
+		for (int i = 2; ; i++) {
+			if ((double)N/i == (int)(N/i) && (set.contains(N/i))) {
+				return i;
 			}
-			else p++;
 		}
 	}
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int N = Integer.parseInt(br.readLine());
-		func(N);
+		int N = Integer.parseInt(br.readLine()), p = 0;
+		setInit();
 		
-		System.out.println(o + " " + p);
+		p = getP(N);
+		System.out.println((int)(N/Math.pow(2, p)) + " " + p);
 		br.close();
 	}
 }
