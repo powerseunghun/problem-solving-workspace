@@ -40,11 +40,6 @@ public class DigitalClock1942 {
 				A++;
 				A %= (3600 * 24);
 			}
-//			do {
-//				if (check(A)) res++;
-//				A++;
-//				A %= (3600 * 24);
-//			} while(A != B);
 			sb.append(res + "\n");
 		}
 		
