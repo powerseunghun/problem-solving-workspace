@@ -37,7 +37,6 @@ public class KnowYourDay2139 {
 			m = Integer.parseInt(tmp.split(" ")[1]);
 			y = Integer.parseInt(tmp.split(" ")[2]);
 			if (d == 0 && m == 0 && y == 0) break;
-			
 			sb.append(calc(d, m, y) + "\n");
 		}
 		
