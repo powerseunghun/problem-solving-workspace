@@ -15,8 +15,7 @@ public class DobbyEnglish2386 {
 			tmp = br.readLine();
 			c = tmp.split(" ")[0].charAt(0);
 			if (c == '#') break;
-			tmp = tmp.substring(tmp.indexOf(' '), tmp.length());
-			System.out.println(tmp);
+			tmp = tmp.substring(tmp.indexOf(' ')+1, tmp.length());
 			format = (c >= 'a' && c <='z') ? (char)c + "|" + ((char)(c-32)) : (char)c + "|" + ((char)(c+32));
 			sb.append(c + " " + Math.abs(tmp.length()-tmp.replaceAll(format, "").length()) + "\n");
 		}
