@@ -27,9 +27,6 @@ public class SpeakingInTongues12400 {
 		char c = ' ';
 		for (int i = 0; i < str.length(); i++) {
 			c = str.charAt(i);
-			if (c == 'o') {
-				System.out.println(c + " " + map.get(c));
-			}
 			sb.append(map.containsKey(c) ? map.get(c) : c);
 		}
 		return sb.toString();
