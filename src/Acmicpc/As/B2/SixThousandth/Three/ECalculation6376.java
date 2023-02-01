@@ -7,7 +7,8 @@ public class ECalculation6376 {
 		sb.append("0 1\n");
 		sb.append("1 2\n");
 		sb.append("2 2.5\n");
-		
+//		sb.append("3 2.666666667\n");
+//		sb.append("4 2.708333333\n");
 	}
 	public static void main(String[] args) {
 		StringBuilder sb = new StringBuilder();
@@ -23,16 +24,3 @@ public class ECalculation6376 {
 		System.out.print(sb.toString());
 	}
 }
-/*
- * n e
-- -----------
-0 1
-1 2
-2 2.5
-3 2.666666667
-4 2.708333333
-5 2.716666667
-6 2.718055556
-7 2.718253968
-8 2.718278770
- */
