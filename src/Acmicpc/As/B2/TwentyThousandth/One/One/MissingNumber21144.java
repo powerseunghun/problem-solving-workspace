@@ -15,7 +15,6 @@ public class MissingNumber21144 {
 		for (int i = 0, n = 1, val = 0; i < str.length(); i+=w) {
 			res++;
 			val = Integer.parseInt(str.substring(i, i+w));
-			System.out.println("val : " + val);
 			if (n != val) {
 				flag = true;
 				break;
@@ -28,7 +27,6 @@ public class MissingNumber21144 {
 				target += 9;
 			}
 		}
-		
 		System.out.println(flag ? res : res+1);
 		br.close();
 	}
