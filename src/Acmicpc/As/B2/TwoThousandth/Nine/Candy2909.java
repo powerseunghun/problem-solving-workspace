@@ -12,8 +12,9 @@ public class Candy2909 {
 		int K = Integer.parseInt(tmp.split(" ")[1]);
 		int z = (int)Math.pow(10, K), tc = C/z*z;
 		
+		System.out.println("z : " + z);
 		// 반올
-		System.out.println(C%z >= z/2 ? z+tc : tc);
+		System.out.println(C%z >= z/2 ? (z==1 ? 0 : z)+tc : tc);
 		br.close();
 	}
 }
