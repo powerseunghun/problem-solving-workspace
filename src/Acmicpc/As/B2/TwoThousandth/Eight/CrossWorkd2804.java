@@ -23,7 +23,6 @@ public class CrossWorkd2804 {
 		String A = tmp.split(" ")[0], B = tmp.split(" ")[1];
 		int c = getIdx(A, B), r = getIdx(B, A.charAt(c));
 		
-		System.out.println("r : " + r + " , c : " + c);
 		for (int i = 0; i < B.length(); i++) {
 			for (int j = 0; j < A.length(); j++) {
 				if (i == r) {
@@ -33,10 +32,6 @@ public class CrossWorkd2804 {
 				else if (i == r && j == c) {
 					sb.append(A.charAt(c));
 				}
-//				else if (i == r) {
-//					sb.append(A);
-//					break;
-//				}
 				else if (j == c) {
 					sb.append(B.charAt(i));
 				}
