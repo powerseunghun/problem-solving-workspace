@@ -14,7 +14,6 @@ public class Guess2966 {
 		String[] strs = {"ABC", "BABC", "CCAABB"};
 		int res = 0;
 		for (int i = 0; i < strs.length; i++) {
-			// strs[i] = ABC;
 			res = 0;
 			for (int j = 0, idx = 0; j < str.length(); j++) {
 				if (str.charAt(j) == strs[i].charAt(idx)) res++;
