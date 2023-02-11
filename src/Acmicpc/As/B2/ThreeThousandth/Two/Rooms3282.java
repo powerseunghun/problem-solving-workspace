@@ -8,7 +8,6 @@ public class Rooms3282 {
 	static int[] arr = null;
 	static void func(int C) {
 		while(C > 0) {
-			System.out.println("c: " + C);
 			boolean flag = false;
 			for (int i = 0; i < arr.length; i++) {
 				if (arr[i] == 0 && C >= 2) {
