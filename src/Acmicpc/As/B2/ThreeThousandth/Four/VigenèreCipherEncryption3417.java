@@ -25,7 +25,6 @@ public class VigenèreCipherEncryption3417 {
 			K = br.readLine();
 			if (K.equals("0")) break;
 			str = br.readLine();
-			
 			sb.append(func(K, str) + "\n");
 		}
 		
