@@ -37,11 +37,8 @@ public class MirrorShape4583 {
 		while(true) {
 			tmp = br.readLine();
 			if (tmp.equals("#")) break;
-			if (!check(tmp)) {
-				sb.append("INVALID");
-			}
-			else sb.append(func(tmp));
-			sb.append("\n");
+			
+			sb.append(check(tmp) ? func(tmp) : "INVALID").append("\n");
 		}
 		
 		System.out.print(sb.toString());
