@@ -36,8 +36,8 @@ public class RockPaperScissors4593 {
 					break;
 				}
 			}
-			sb.append("P1 : " + p1).append("\n");
-			sb.append("P2 : " + p2).append("\n");
+			sb.append("P1: " + p1).append("\n");
+			sb.append("P2: " + p2).append("\n");
 		}
 		
 		System.out.print(sb.toString());
