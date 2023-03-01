@@ -14,7 +14,6 @@ public class WordSearching9771 {
 			for (int i = 0; i < tmp.split(" ").length; i++) {
 				if ((tmp.split(" ")[i]).contains(str)) cnt++;
 			}
-			System.out.println("cnt : " + cnt);
 		}
 		
 		System.out.println(cnt);
