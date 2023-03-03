@@ -1,9 +1,8 @@
-package Acmicpc.As.B2.TenThousandth.Zero.Eight;
+package Acmicpc.As.B3.TenThousandth.Zero.Eight;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 public class BallIn10810 {
 	static int[] arr = null;
