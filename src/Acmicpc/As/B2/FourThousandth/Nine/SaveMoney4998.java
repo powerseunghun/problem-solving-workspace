@@ -4,8 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import Acmicpc.Sorting.TwoThousandth.Nine.FeequencySort2910;
-
 public class SaveMoney4998 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -24,9 +22,7 @@ public class SaveMoney4998 {
 				res++;
 				N += N / 100 * B;
 			}
-			
 			sb.append(res).append("\n");
-			System.out.println("res : " + res);
 		}
 		
 		System.out.print(sb.toString());
