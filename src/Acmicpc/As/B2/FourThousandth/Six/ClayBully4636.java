@@ -39,11 +39,8 @@ public class ClayBully4636 {
 					B = names[i];
 				}
 			}
-			// 22 18 20
-			// 16 14 20 15
 			sb.append(A).append(" took clay from ").append(B).append(".\n");
 		}
-		
 		System.out.print(sb.toString());
 		br.close();
 	}
