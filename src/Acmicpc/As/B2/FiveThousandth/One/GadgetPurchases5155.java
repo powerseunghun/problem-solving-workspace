@@ -43,6 +43,7 @@ public class GadgetPurchases5155 {
 			for (int j = 0; j < use.length; j++) {
 				if (use[j] * arr[j] > cost[j]) sb.append(j+1).append("\n");
 			}
+			sb.append("\n");
 		}
 		System.out.print(sb.toString());
 		br.close();
