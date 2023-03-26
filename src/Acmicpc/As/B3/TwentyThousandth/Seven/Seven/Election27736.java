@@ -26,7 +26,9 @@ public class Election27736 {
 			}
 		}
 		
-		System.out.println(arr[2] >= N/2 ? "INVALID" : (arr[1] > arr[0] || arr[0] == arr[1]) ? "REJECTED" : "APPROVED");
+		System.out.println(arr[2] >= (N%2 == 0 ? N/2 : N/2+1) 
+				? "INVALID" 
+				: (arr[1] > arr[0] || arr[0] == arr[1]) ? "REJECTED" : "APPROVED");
 		br.close();
 	}
 }
