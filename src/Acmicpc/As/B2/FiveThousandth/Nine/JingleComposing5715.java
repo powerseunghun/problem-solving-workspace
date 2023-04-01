@@ -7,8 +7,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-import Acmicpc.Sorting.TwoThousandth.Nine.FeequencySort2910;
-
 public class JingleComposing5715 {
 	static Map<Character, Double> map = new HashMap<>();
 	static char[] identifiers = {'W', 'H', 'Q', 'E', 'S', 'T', 'X'};
