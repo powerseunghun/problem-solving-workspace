@@ -6,8 +6,6 @@ import java.io.InputStreamReader;
 import java.util.HashSet;
 import java.util.Set;
 
-import Acmicpc.Sorting.TwoThousandth.Nine.FeequencySort2910;
-
 public class RandomNumberGenerate6500 {
 	static int func(String str) {
 		int val = 0;
