@@ -36,10 +36,6 @@ public class FredsLottoTickets4118 {
 				}
 			}
 			list = new ArrayList<Integer>(set);
-			for (int i = 0; i < list.size(); i++) {
-				System.out.print(list.get(i) + " ");
-			}
-			System.out.println();
 			Collections.sort(list);
 			sb.append(check(list) ? "Yes" : "No").append("\n");
 		}
