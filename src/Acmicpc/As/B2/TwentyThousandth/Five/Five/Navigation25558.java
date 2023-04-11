@@ -35,13 +35,10 @@ public class Navigation25558 {
 				else {
 					sum += getDist(curX, curY, dist[0], dist[1]);
 				}
-				System.out.println("sum : " + sum);
 				curX = dist[0];
 				curY = dist[1];
 			}
 			sum += getDist(curX, curY, arr[2], arr[3]);
-			System.out.println("sum : " + sum);
-			System.out.println();
 			
 			if (sum < min) {
 				res = i;
