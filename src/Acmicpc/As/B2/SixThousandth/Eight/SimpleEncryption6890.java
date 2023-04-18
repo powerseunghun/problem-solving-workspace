@@ -31,7 +31,6 @@ public class SimpleEncryption6890 {
 		}
 		
 		idx = 0;
-		
 		for (char c[] : arr) {
 			for (char a : c) {
 				if (a == '.') break;
