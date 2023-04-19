@@ -19,7 +19,6 @@ public class AnagramChecker6843 {
 		preWork(sc, str);
 		
 		for (int i = 0; i < len; i++) {
-			System.out.println(bc[i] + " " + sc[i]);
 			if (bc[i] != sc[i]) return false;
 		}
 		return true;
