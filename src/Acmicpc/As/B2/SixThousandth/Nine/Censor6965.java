@@ -3,7 +3,6 @@ package Acmicpc.As.B2.SixThousandth.Nine;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 public class Censor6965 {
 	static final int limitLen = 4;
