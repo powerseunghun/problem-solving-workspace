@@ -29,7 +29,7 @@ public class ArithmeticSequence6992 {
 	}
 	static String strFormat(boolean flag) {
 		return flag 
-				? "The next 5 numbers after " + strParsing(arr) + " are : " + strParsing(nextArr) 
+				? "The next 5 numbers after " + strParsing(arr) + " are: " + strParsing(nextArr) 
 				: "The sequence " + strParsing(arr) + " is not an arithmetic sequence.";
 	}
 	public static void main(String[] args) throws NumberFormatException, IOException {
