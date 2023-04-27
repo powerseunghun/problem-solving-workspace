@@ -12,7 +12,6 @@ public class Hotelier27481 {
 		StringBuilder sb = new StringBuilder("0000000000");
 		char c = ' ';
 		
-		System.out.println(str.length());
 		for (int i = 0, idx = 0, flag = 0; i < str.length(); i++, flag = 0) {
 			c = str.charAt(i);
 			switch(c) {
