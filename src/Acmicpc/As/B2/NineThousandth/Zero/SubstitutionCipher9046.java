@@ -22,7 +22,6 @@ public class SubstitutionCipher9046 {
 			for (int i = 0, w = 0; i < str.length(); i++) {
 				if (str.charAt(i) == ' ') continue;
 				w = str.charAt(i) - 97;
-				System.out.println("w : " + w);
 				cnts[w]++;
 				max = Math.max(cnts[w], max);
 			}
