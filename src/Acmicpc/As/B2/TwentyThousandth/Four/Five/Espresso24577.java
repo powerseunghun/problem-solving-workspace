@@ -13,12 +13,10 @@ public class Espresso24577 {
 		while(n-- > 0) {
 			str = br.readLine();
 			x = str.contains("L") ? (str.charAt(0) - '0') + 1 : Integer.parseInt(str);
-			
 			if (cur < x) {
 				res++;
 				cur = s;
 			}
-			
 			cur -= x;
 		}
 		
