@@ -22,7 +22,6 @@ public class CountVowels10203 {
 		int T = Integer.parseInt(br.readLine());
 		String str = null;
 		
-		//The number of vowels in despicable is 4.
 		while(T-- > 0) {
 			str = br.readLine();
 			sb.append("The number of vowels in ")
