@@ -4,16 +4,14 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.StringTokenizer;
 
 public class UpHill14910 {
 	static List<Integer> list = new ArrayList<Integer>();
-	static List<Integer> sortedList = new ArrayList<Integer>();
 	static boolean func() {
-		for (int i = 0; i < list.size(); i++) {
-			if (list.get(i) != sortedList.get(i)) return false;
+		for (int i = 0, v = 0; i < list.size()-1; i++) {
+			if (list.get(i) > list.get(i+1)) return false;
 		}
 		return true;
 	}
@@ -25,9 +23,7 @@ public class UpHill14910 {
 		while(st.hasMoreTokens()) {
 			v = Integer.parseInt(st.nextToken());
 			list.add(v);
-			sortedList.add(v);
 		}
-		Collections.sort(sortedList);
 		
 		System.out.println(func() ? "Good" : "Bad");
 		br.close();
