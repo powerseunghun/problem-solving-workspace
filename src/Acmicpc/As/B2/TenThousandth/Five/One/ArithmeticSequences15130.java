@@ -26,7 +26,6 @@ public class ArithmeticSequences15130 {
 		d = (vals[1] - vals[0]) / (double)(idxs[1] - idxs[0]);
 		
 		if (d - (int)d != 0) {
-			System.out.println("EE");
 			sb.append("-1");
 		}
 		
