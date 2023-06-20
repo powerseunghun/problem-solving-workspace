@@ -25,12 +25,9 @@ public class CardFactory17273 {
 		while(M-- > 0) {
 			v = Integer.parseInt(br.readLine());
 			for (int i = 0; i < sIds.length; i++) {
-				if (sIds[i] == 0) {
-					sIds[i] = arr1[i] <= v ? 1 : 0;
-				}
-				else {
-					sIds[i] = arr2[i] <= v ? 0 : 1;
-				}
+				sIds[i] = sIds[i] == 0 
+						? sIds[i] = arr1[i] <= v ? 1 : 0 
+						: arr2[i] <= v ? 0 : 1;
 			}
 		}
 		
