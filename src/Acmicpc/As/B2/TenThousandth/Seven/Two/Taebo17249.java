@@ -1,4 +1,4 @@
-package Acmicpc.As.B2.TenThousandth.Five.Seven.Two;
+package Acmicpc.As.B2.TenThousandth.Seven.Two;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
