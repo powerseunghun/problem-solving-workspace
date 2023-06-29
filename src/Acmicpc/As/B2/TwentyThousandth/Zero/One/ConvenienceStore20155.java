@@ -10,9 +10,8 @@ public class ConvenienceStore20155 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String str = br.readLine();
 		StringTokenizer st = new StringTokenizer(br.readLine());
-		int N = Integer.parseInt(str.split(" ")[0]);
 		int M = Integer.parseInt(str.split(" ")[1]);
-		int m = Integer.MIN_VALUE, v = 0;
+		int m = Integer.MIN_VALUE;
 		
 		res = new int[M+1];
 		
