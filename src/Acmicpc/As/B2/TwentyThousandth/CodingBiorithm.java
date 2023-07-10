@@ -22,9 +22,17 @@ public class CodingBiorithm {
 		while(T-- > 0) {
 			str = br.readLine();
 			v = func(str, 0, 4) * func(str, 4, 2) * func(str, 6, 2);
-			if (v > max && Integer.parseInt(res) > Integer.parseInt(str)) {
-				max = v;
-				res = str;
+			if (v >= max) {
+				if (v == max) {
+					if (Integer.parseInt(res) > Integer.parseInt(str)) {
+						max = v;
+						res = str;
+					}
+				}
+				else {
+					max = v;
+					res = str;
+				}
 			}
 		}
 		
