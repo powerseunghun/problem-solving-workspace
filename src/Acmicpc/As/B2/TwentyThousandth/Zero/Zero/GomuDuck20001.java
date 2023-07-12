@@ -23,7 +23,6 @@ public class GomuDuck20001 {
 			}
 		}
 		
-		System.out.println(res);
 		System.out.println(res == 0 ? "고무오리야 사랑해" : "힝구");
 		br.close();
 	}
