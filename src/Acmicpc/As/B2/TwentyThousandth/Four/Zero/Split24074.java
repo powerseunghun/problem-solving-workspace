@@ -10,18 +10,28 @@ public class Split24074 {
 		br.readLine();
 		String str = br.readLine();
 		StringTokenizer st = null;
-		int v = 0;
+		int v = 0, pm = 0, res1 = 0, res2 = 0;
+		boolean flag = true;
 		
 		for (int i = 0, kVal = 0; i < str.split(" ").length; i++) {
 			kVal = Integer.parseInt(str.split(" ")[i]);
 			v = Math.max(v, kVal);
 		}
-		st = new StringTokenizer(str, "");
+		st = new StringTokenizer(str);
 		
 		
 		while(st.hasMoreTokens()) {
-			System.out.println(st.nextToken());
+			pm = Integer.parseInt(st.nextToken());
+			if (v == pm) {
+				flag = false;
+				continue;
+			}
+			if(flag) res1 += pm;
+			else res2 += pm;
 		}
+		
+		System.out.println(res1);
+		System.out.println(res2);
 		br.close();
 	}
 }
