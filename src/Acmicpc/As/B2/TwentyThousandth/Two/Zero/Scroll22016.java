@@ -9,7 +9,6 @@ public class Scroll22016 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
 		String str = br.readLine();
-		int N = Integer.parseInt(str.split(" ")[0]);
 		int K = Integer.parseInt(str.split(" ")[1]);
 		str = br.readLine();
 		
