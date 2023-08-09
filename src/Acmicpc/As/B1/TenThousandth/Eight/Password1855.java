@@ -7,15 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Password1855 {
-	/**
-	 * aei
-jfb
-cgk
-lhd
-	 * @param args
-	 * @throws NumberFormatException
-	 * @throws IOException
-	 */
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
