@@ -8,7 +8,6 @@ public class RoundUp2033 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		double N = Double.parseDouble(br.readLine()), w = 10.0;
-//		System.out.println(Math.round(14.0 / 10) * 10.0);
 		
 		while(N > w) {
 			N = Math.round(N / w) * w;
