@@ -31,7 +31,6 @@ public class LetterRecognize3448 {
 			sb.append(check(b, r) ? (int)res : String.format("%.1f", res));
 			sb.append("%.").append("\n");
 		}
-		
 		System.out.print(sb.toString());
 		br.close();
 	}
