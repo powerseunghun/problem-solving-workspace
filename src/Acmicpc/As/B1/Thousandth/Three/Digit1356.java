@@ -22,8 +22,6 @@ public class Digit1356 {
 			bSub = str.substring(i+1, w);
 			aRes = getScore(aSub);
 			bRes = getScore(bSub);
-			System.out.println("asub :: " + aSub + " aRes :: " + aRes);
-			System.out.println("bsub :: " + bSub + " bRes :: " + bRes);
 			if (aRes == bRes) return true;
 		}
 		return false;
