@@ -46,12 +46,5 @@ public class Unique5533 {
 		
 		System.out.print(sb.toString());
 		br.close();
-		
-//		for (int i = 0; i < sArr.length; i++) {
-//			for (int j = 0; j < sArr[i].length; j++) {
-//				System.out.print(sArr[i][j] + " ");
-//			}
-//			System.out.println();
-//		}
 	}
 }
