@@ -10,7 +10,7 @@ public class CarNumber16968 {
 		String str = br.readLine();
 		int res = str.charAt(0) == 'c' ? 26 : 10;
 		
-		for (int i = 1; i < str.length(); i++) {
+		for (int i = 1, w = 0; i < str.length(); i++) {
 			res *= str.charAt(i-1) == str.charAt(i) 
 					? str.charAt(i) == 'c' ? 25 : 9
 					: str.charAt(i) == 'c' ? 26 : 10;
