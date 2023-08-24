@@ -14,7 +14,7 @@ public class Add10823 {
 		long res = 0;
 		
 		while((str = br.readLine()) != null) {
-			sb.append(br.readLine());
+			sb.append(str);
 		}
 		
 		st = new StringTokenizer(sb.toString(), ",");
