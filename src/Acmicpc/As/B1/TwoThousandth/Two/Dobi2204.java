@@ -28,7 +28,6 @@ public class Dobi2204 {
 					break;
 				}
 			}
-			
 			sb.append(res).append("\n");
 		}
 		
