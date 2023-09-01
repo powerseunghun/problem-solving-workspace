@@ -12,9 +12,7 @@ public class BinaryReverse11179 {
 	static long getNumber(String str) {
 		long res = 0;
 		for (int i = str.length()-1, w = 0; i >= 0; i--) {
-			System.out.println(str.charAt(i));
 			res += (str.charAt(i)-'0') * Math.pow(2, w++);
-			System.out.println(res);
 		}
 		
 		return res;
@@ -23,7 +21,6 @@ public class BinaryReverse11179 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());
 		
-		System.out.println(func(N));
 		System.out.println(getNumber(func(N)));
 		br.close();
 	}
