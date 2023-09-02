@@ -7,7 +7,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MileSlide17363 {
-	static final int radix = 10;
 	static int[] ascArr1 = {46, 79, 45, 124, 47, 92, 94, 60, 118, 62};
 	static int[] ascArr2 = {46, 79, 124, 45, 92, 47, 60, 118, 62, 94};
 	static Map<Integer, Integer> map = new HashMap<>();
@@ -35,7 +34,7 @@ public class MileSlide17363 {
 		for (int i = arr[0].length-1; i >= 0; i--) {
 			for (int j = 0, v = 0; j < arr.length; j++) {
 				v = arr[j][i];
-				sb.append(Character.forDigit((int)map.get(v), radix));
+				sb.append((char)(int)map.get(v));
 			}
 			sb.append("\n");
 		}
