@@ -6,8 +6,6 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
-import Acmicpc.Sorting.TwoThousandth.Nine.FeequencySort2910;
-
 public class CoinGame2684 {
 	static Map<String, Integer> map = new HashMap<>();
 	static String[] cases = {"TTT", "TTH", "THT", "THH", "HTT", "HTH", "HHT", "HHH"};
