@@ -22,8 +22,6 @@ public class FavoriteNumber10570 {
 			}
 			max = Integer.MIN_VALUE;
 			maxVal = Integer.MAX_VALUE;
-			// 42 2
-			// 19 1
 			for (Integer val : map.values()) {
 				max = Math.max(val, max);
 			}
