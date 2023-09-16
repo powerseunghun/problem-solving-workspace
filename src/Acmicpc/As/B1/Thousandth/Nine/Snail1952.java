@@ -47,7 +47,7 @@ public class Snail1952 {
 				newX = curX + dirX[n];
 				newY = curY + dirY[n];
 				if ((newX < 0 || newX >= N || newY < 0 || newY >= M) || (check[newX][newY])) continue;
-				res = i == 1 ? res + 1 : res;
+				res = i != 0 ? res + 1 : res;
 				
 				check[newX][newY] = true;
 				q.add(new dir(newX, newY));
