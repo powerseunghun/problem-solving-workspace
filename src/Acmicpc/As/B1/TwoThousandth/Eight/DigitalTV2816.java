@@ -24,7 +24,7 @@ public class DigitalTV2816 {
 		for (int i = 0; i < c1; i++) {
 			sb.append("1");
 		}
-		for (int i = 0; i < c2; i++) {
+		for (int i = 0; i < c1; i++) {
 			sb.append("4");
 		}
 		for (int i = 0; i < c2+t; i++) {
