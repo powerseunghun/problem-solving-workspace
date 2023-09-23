@@ -14,48 +14,20 @@ public class BabySeokHwan15947 {
 			"very", "cute", "tururu", "turu",
 			"in", "bed", "tururu", "turu", "baby", "sukhwan"
 		);
-	static String sFormat(String originStr, int loopCount, int N) {
-		String returnStr = null;
+	static String sFormat(String originStr, int loopCount) {
 		if (!originStr.substring(0, 2).equals("tu")) return originStr;
-		if (originStr.length() == 6) {
-			if (loopCount >= 3) {
-				returnStr = "tu+ru*" + (loopCount + 2);
-			}
-			else {
-				returnStr = originStr;
-				for (int i = 0; i < N/list.size(); i++) {
-					returnStr += "ru";
-				}
-			}
-		}
-		else {
-			if (loopCount >= 4) {
-				returnStr = "tu+ru*" + (loopCount + 2);
-			}
-			else {
-				returnStr = originStr;
-				for (int i = 0; i < N/list.size(); i++) {
-					returnStr += "ru";
-				}
-			}
-		}
-		return returnStr;
+		int ruCnt = (originStr.length() == 6 ? 2 : 1) + loopCount-1;
+		if (ruCnt < loopLimit) return originStr;
+		
+		return "tu" + "+ru*" + ruCnt;
 	}
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int N = Integer.parseInt(br.readLine()), idx = N % list.size(), loopCount = 0;
-		boolean isExactlyMod = idx == 0;
-		String originStr = isExactlyMod ? list.get(list.size()-1) : list.get(idx-1), res = null;
+		int N = Integer.parseInt(br.readLine());
+		int loopCount = N % list.size() == 0 ? N / list.size() : N / list.size() + 1;
+		String originStr = N % list.size() == 0 ? "sukhwan" : list.get(N%list.size()-1);
 		
-		if (!isExactlyMod) {
-			loopCount = N / list.size();
-			res = sFormat(originStr, loopCount, N);
-		}
-		else {
-			res = originStr;
-		}
-		
-		System.out.println(res);
+		System.out.println(sFormat(originStr, loopCount));
 		br.close();
 	}
 }
