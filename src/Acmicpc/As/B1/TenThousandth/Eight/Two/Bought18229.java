@@ -24,11 +24,10 @@ public class Bought18229 {
 		}
 		for (int i = 0; i < arr[0].length; i++) {
 			for (int j = 0; j < arr.length; j++) {
-				System.out.println("i : " + i + ", j : " + j);
 				res[j] += arr[j][i];
-				if (res[j] > limit) {
-					x = i+1;
-					y = j+1;
+				if (res[j] >= limit) {
+					x = j+1;
+					y = i+1;
 					i = arr[0].length+1;
 					break;
 				}
