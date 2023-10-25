@@ -13,7 +13,6 @@ public class NumbersSum2018 {
 		while(l <= N) {
 			while (r++ <= N) {
 				sum += r;
-				System.out.println("sum : " + sum);
 				if (sum >= N) {
 					res = sum == N ? res+1 : res;
 					break;
@@ -21,7 +20,6 @@ public class NumbersSum2018 {
 			}
 			while(l++ <= N) {
 				sum -= l;
-				System.out.println("sum : " + sum);
 				if (sum <= N) {
 					res = sum == N ? res+1 : res;
 					break;
