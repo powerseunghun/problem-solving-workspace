@@ -32,7 +32,6 @@ public class YourAvg25206 {
 			res += sc * map.get(grade);
 		}
 		
-		System.out.println(scSum);
 		System.out.println(String.format("%.6f", res / scSum));
 		br.close();
 	}
