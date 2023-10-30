@@ -7,17 +7,18 @@ import java.io.InputStreamReader;
 public class Prime1312 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String str = br.readLine(), fm = null;
+		String str = br.readLine();
 		int A = Integer.parseInt(str.split(" ")[0]);
 		int B = Integer.parseInt(str.split(" ")[1]);
 		int N = Integer.parseInt(str.split(" ")[2]);
-		fm = "%." + (N+1) + "f";
-		System.out.println(fm);
+		int res = A%B;
 		
-		System.out.println((double)A / B);
-		str = String.format(fm, (double)A / B);
-		System.out.println("str: " + str);
-		System.out.println(str.charAt(str.length()-2));
+		while(--N > 0) {
+			res *= 10;
+			res %= B;
+		}
+		
+		System.out.println((res*10) / B);
 		br.close();
 	}
 }
