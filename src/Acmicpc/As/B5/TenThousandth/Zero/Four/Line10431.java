@@ -25,6 +25,7 @@ public class Line10431 {
 			for (int j = 0; j < arr.length; j++) {
 				arr[j] = Integer.parseInt(st.nextToken());
 			}
+			// independent
 			for (int j = 1; j < arr.length; j++) {
 				for (int k = j-1; k >= 0; k--) {
 					res = arr[k] > arr[j] ? res+1 : res;
