@@ -1,4 +1,4 @@
-package Acmicpc.As.B5.EightThousandth.Eight;
+package Acmicpc.As.S5.EightThousandth.Eight;
 
 import java.io.BufferedReader;
 import java.io.IOException;
