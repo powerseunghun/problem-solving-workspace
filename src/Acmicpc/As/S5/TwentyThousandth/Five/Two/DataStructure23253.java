@@ -20,7 +20,7 @@ public class DataStructure23253 {
 			st = new StringTokenizer(br.readLine());
 			
 			v = limit+1;
-			while (st.hasMoreTokens() & flag) {
+			while (st.hasMoreTokens()) {
 				w = Integer.parseInt(st.nextToken());
 				if (w > v) flag = false;
 				v = w;
