@@ -15,6 +15,7 @@ public class GreedyPig3060 {
 		while(T-- > 0) {
 			N = Integer.parseInt(br.readLine());
 			st = new StringTokenizer(br.readLine());
+			s = 0;
 			while(st.hasMoreTokens()) {
 				s += Integer.parseInt(st.nextToken());
 			}
