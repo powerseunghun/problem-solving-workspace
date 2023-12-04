@@ -14,9 +14,7 @@ public class RoomNumber5671 {
 		String str = null, rn = null;
 		int N = 0, M = 0, res = 0;
 		
-//		while((str = br.readLine()) != null) {
-		while (true) {
-			str = br.readLine();
+		while((str = br.readLine()) != null) {
 			N = Integer.parseInt(str.split(" ")[0]);
 			M = Integer.parseInt(str.split(" ")[1]);
 			if (N == 0 && M == 0) break;
