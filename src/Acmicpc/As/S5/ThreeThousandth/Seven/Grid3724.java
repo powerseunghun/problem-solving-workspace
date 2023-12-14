@@ -28,8 +28,9 @@ public class Grid3724 {
 				for (int j = 0; j < arr.length; j++) {
 					arr[j] = arr[j].multiply(new BigInteger(st.nextToken()));
 				}
-				if (i == 0) res = arr[i];
 			}
+			idx = 0;
+			res = arr[0];
 			for (int i = 1; i < arr.length; i++) {
 				if (res.compareTo(arr[i]) <= 0) {
 					res = arr[i];
