@@ -13,6 +13,7 @@ public class GoodDayBadDay17211 {
 		int N = Integer.parseInt(str.split(" ")[0]);
 		double G = Integer.parseInt(str.split(" ")[1]);
 		arr = Arrays.stream(br.readLine().split(" ")).mapToDouble(Double::parseDouble).toArray();
+		
 		G = (1-G) * 1000;
 		for (int i = 0; i < N; i++) {
 			G = G*arr[0]+(1000-G)*arr[2];
