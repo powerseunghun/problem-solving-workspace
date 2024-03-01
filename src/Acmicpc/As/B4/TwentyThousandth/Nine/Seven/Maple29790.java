@@ -11,7 +11,6 @@ public class Maple29790 {
 		int L = Integer.parseInt(str.split(" ")[2]);
 		
 		if (N < 1000) return "Bad";
-		
 		return U >= 8000 || L >= 260 ? "Very Good" : "Good";
 	}
 	public static void main(String[] args) throws IOException {
