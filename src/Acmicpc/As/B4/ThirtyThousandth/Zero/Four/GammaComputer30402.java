@@ -23,7 +23,7 @@ public class GammaComputer30402 {
 			}
 		}
 		
-		System.out.println(res == 1 ? "chunbae" : res == 1 ? "nabi" : "yeongcheol");
+		System.out.println(res == 1 ? "chunbae" : res == 2 ? "nabi" : "yeongcheol");
 		br.close();
 	}
 }
