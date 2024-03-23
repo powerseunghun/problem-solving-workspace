@@ -8,6 +8,7 @@ import java.io.IOException;
 public class AliceTrack31428 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		br.readLine();
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		String str = br.readLine();
 		int res = 0;
