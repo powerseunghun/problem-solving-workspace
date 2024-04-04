@@ -13,7 +13,6 @@ public class BronzeSilverFriend29736 {
 		str = br.readLine();
 		int K = Integer.parseInt(str.split(" ")[0]);
 		int X = Integer.parseInt(str.split(" ")[1]), res = 0;
-		
 		for (int i = K-X; i <= K+X; i++) {
 			if (i >= A && i <= B) res++;
 		}
