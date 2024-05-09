@@ -17,7 +17,6 @@ public class ArrangementOfContest9443 {
 		}
 		
 		for (int i = 65; i <= 90; i++) {
-			System.out.println((char)i);
 			if (!list.contains((char)i)) break;
 			res++;
 		}
