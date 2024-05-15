@@ -15,7 +15,6 @@ public class StickyKeys31656 {
 			if (str.charAt(i) == str.charAt(i-1)) continue;
 			sb.append(str.charAt(i));
 		}
-		
 		System.out.println(sb.toString());
 		br.close();
 	}
