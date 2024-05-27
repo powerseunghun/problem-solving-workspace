@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -52,12 +53,11 @@ public class BasicAlgorithm {
 	static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	// String Builder
 	static final StringBuilder sb = new StringBuilder();
-	static final String[] methodNames = {
-			"behavior1","behavior2","behavior3","behavior4",
-	};
-	static void methodCall(String methodName) {
-		
-		
+//	static final String[] methodNames = {
+//			"behavior1"
+//	};
+	static void generateArray(int r) {
+		Arrays.setAll(arr, (i)->(int)(Math.random()*r)+1);
 	}
 	static void func(int N, int d) {
 		if (d >= N) {
@@ -163,12 +163,10 @@ public class BasicAlgorithm {
 		
 		func4(N);
 	}
+	public static void behavior5() {
+		
+	}
 	public static void main(String[] args) throws IOException {
-		System.out.println(behavior1());
-//		behavior1();
-//		behavior2();
-//		behavior3();
-//		behavior4();
 		
 		
 		br.close();
