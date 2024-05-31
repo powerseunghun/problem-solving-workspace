@@ -21,11 +21,6 @@ public class Zebra30454 {
 		return sb.toString();
 	}
 	static int func2(String str) {
-//		int res = 0;
-//		for (int i = 0; i < str.length(); i++) {
-//			if (str.charAt(i) == '1') res++;
-//		}
-//		return res;
 		return str.length()-str.replaceAll("1","").length();
 	}
 	public static void main(String[] args) throws IOException {
