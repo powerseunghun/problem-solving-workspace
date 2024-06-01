@@ -19,7 +19,7 @@ public class Product12779 {
 		for (long i = (long)(Math.sqrt(A)); i*i <= B; i++) {
 			C = i*i > A ? 1 : 0;
 		}
-		
+	
 		if (C == 0L) {
 			System.out.println("0");
 		}
