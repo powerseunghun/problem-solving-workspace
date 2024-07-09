@@ -6,8 +6,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-import Acmicpc.Sorting.TwoThousandth.Nine.FeequencySort2910;
-
 public class SpecialEvent28288 {
 	static final int c = 5;
 	static char[][] arr = null;
