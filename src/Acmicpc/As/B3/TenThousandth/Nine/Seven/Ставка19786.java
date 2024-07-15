@@ -6,14 +6,9 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class Ставка19786 {
-	static final int l = 3;
-	static int[] arr = new int[l];
 	static int func(int a, int c, int r, int g, int b) {
 		int t1 = a*(r*r+g*g+b*b);
-		System.out.println("t1 : " + t1);
 		int t2 = c*(Math.min(r, Math.min(g, b)));
-		System.out.println("t2 : " + t2);
-		
 		return t1+t2;
 	}
 	public static void main(String[] args) throws NumberFormatException, IOException {
@@ -35,7 +30,6 @@ public class Ставка19786 {
 			v1 = func(a, c, r+1, g, b);
 			v2 = func(a, c, r, g+1, b);
 			v3 = func(a, c, r, g, b+1);
-			System.out.println("V1 : " + v1 + " v2 : " + v2 + " v3 : " + v3);
 			sb.append((v1>=v2 && v1 >= v3) ? "RED" : v2 >= v3 ? "GREEN" : "BLUE").append("\n");
 		}
 		
