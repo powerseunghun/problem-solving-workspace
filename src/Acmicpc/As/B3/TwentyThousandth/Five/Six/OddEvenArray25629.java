@@ -17,7 +17,6 @@ public class OddEvenArray25629 {
 			else even++;
 		}
 		
-		System.out.println(odd + " " + even);
 		System.out.println((odd-even == 0 || odd-even == 1) ? "1" : "0");
 		br.close();
 	}
