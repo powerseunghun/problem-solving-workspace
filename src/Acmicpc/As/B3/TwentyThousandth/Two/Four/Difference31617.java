@@ -6,23 +6,25 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class Difference31617 {
-	static int[] arr1 = null, arr2 = null;
+	static void arrInit(int[] arr, StringTokenizer st) {
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = Integer.parseInt(st.nextToken());
+		}
+	}
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int K = Integer.parseInt(br.readLine());
 		int N = Integer.parseInt(br.readLine());
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		int M = Integer.parseInt(br.readLine()), res = 0;
+		int[] arr1 = null, arr2 = null;
 		
 		arr1 = new int[N];
-		for (int i = 0; i < arr1.length; i++) {
-			arr1[i] = Integer.parseInt(st.nextToken());
-		}
 		arr2 = new int[M];
+		
+		arrInit(arr1, st);
 		st = new StringTokenizer(br.readLine());
-		for (int i = 0; i < arr2.length; i++) {
-			arr2[i] = Integer.parseInt(st.nextToken());
-		}
+		arrInit(arr2, st);
 		
 		for (int i = 0; i < arr1.length; i++) {
 			for (int j = 0; j < arr2.length; j++) {
