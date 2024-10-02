@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 public class NextWords20528 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int n = Integer.parseInt(br.readLine());
+		br.readLine();
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		String b = st.nextToken(), s = null;
 		boolean flag = true;
