@@ -7,8 +7,7 @@ import java.io.InputStreamReader;
 public class Таблицарезультатов28808 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int n = Integer.parseInt(br.readLine().split(" ")[0]);
-		int res = 0;
+		int n = Integer.parseInt(br.readLine().split(" ")[0]), res = 0;
 		String str = null;
 		
 		while(n-- > 0) {
