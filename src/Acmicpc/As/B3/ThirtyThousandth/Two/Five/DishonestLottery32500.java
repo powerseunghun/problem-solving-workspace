@@ -22,7 +22,6 @@ public class DishonestLottery32500 {
 		}
 		
 		for (int i = 1; i < arr.length; i++) {
-			System.out.println(i + " " + arr[i]);
 			if (arr[i] > n*2) {
 				sb.append(i).append(" ");
 			}
