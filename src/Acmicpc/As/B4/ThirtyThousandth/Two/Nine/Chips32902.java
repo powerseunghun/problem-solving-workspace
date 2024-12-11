@@ -11,7 +11,7 @@ public class Chips32902 {
 		int k = Integer.parseInt(str.split(" ")[0]);
 		int n = Integer.parseInt(str.split(" ")[1]);
 		
-		System.out.println(n+1 " " + (k*n+1));
+		System.out.println(n+1 + " " + (k*n+1));
 		br.close();
 	}
 }
