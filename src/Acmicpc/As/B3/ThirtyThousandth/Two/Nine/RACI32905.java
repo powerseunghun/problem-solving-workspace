@@ -22,7 +22,6 @@ public class RACI32905 {
 			}
 			if (cnt != 1) flag = false;
 		}
-		
 		System.out.println(flag ? "Yes" : "No");
 		br.close();
 	}
