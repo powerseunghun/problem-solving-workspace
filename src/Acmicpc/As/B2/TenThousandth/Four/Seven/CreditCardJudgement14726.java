@@ -23,7 +23,6 @@ public class CreditCardJudgement14726 {
 				} else {
 					res += v;
 				}
-				
 			} else {
 				res += str.charAt(i)-'0';
 			}
