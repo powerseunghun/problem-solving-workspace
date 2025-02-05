@@ -33,7 +33,6 @@ public class Palindrome14561 {
 				}
  				A /= n;
 			}
-			System.out.println("res :: " + res);
 			sb.append(check(res) ? "1" : "0").append("\n");
 		}
 		
