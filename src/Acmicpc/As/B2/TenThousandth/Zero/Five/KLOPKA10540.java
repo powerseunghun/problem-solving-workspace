@@ -19,7 +19,7 @@ public class KLOPKA10540 {
 			max1 = Math.max(max1, x);
 			min1 = Math.min(min1, x);
 			max2 = Math.max(max2, y);
-			min2 = Math.min(min2, x);
+			min2 = Math.min(min2, y);
 		}
 		res1 = max1-min1;
 		res2 = max2-min2;
