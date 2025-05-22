@@ -12,7 +12,8 @@ public class Keystroke20268 {
 		int T = Integer.parseInt(br.readLine()), N = 0, M = 0;
 		String str = null;
 		
-		while(T-- > 0) {			
+		while(T-- > 0) {
+			str = br.readLine();
 			N = Integer.parseInt(str.split(" ")[0]);
 			M = Integer.parseInt(str.split(" ")[1]);
 			arr1 = new int[N];
