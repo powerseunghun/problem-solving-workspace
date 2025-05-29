@@ -21,7 +21,6 @@ public class Cypher11297 {
 			str = br.readLine();
 			for (int i = 0; i < str.length(); i++) {
 				char ch = str.charAt(i);
-				System.out.println("ch :: " + ch);
 				if (ch < 'a' || ch > 'z') {
 					sb.append(ch);
 					continue;
