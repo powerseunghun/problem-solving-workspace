@@ -15,7 +15,6 @@ public class CDOTPathfinder34426 {
 		int T = Integer.parseInt(br.readLine()), N = 0;
 		double a = 0, b = 0, min = 0;
 		StringTokenizer st = null;
-		String str = null;
 		
 		while(T-- > 0) {
 			map.clear();
