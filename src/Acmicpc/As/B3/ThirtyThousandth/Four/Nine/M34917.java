@@ -17,11 +17,11 @@ public class M34917 {
 			arr = new char[N][N];
 			
 			for (int i = 0; i < arr.length; i++) {
-				Arrays.fill(arr[i], ',');
+				Arrays.fill(arr[i], '.');
 				arr[i][0] = '#';
 				arr[i][N-1] = '#';
 			}
-			for (int i = 0; i < N/2; i++) {
+			for (int i = 0; i <= N/2; i++) {
 				arr[i][i] = '#';
 				arr[i][N-1-i] = '#';
 			}
