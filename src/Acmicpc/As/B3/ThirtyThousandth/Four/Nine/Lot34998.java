@@ -3,7 +3,6 @@ package Acmicpc.As.B3.ThirtyThousandth.Four.Nine;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 public class Lot34998 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
