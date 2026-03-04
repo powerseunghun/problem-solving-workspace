@@ -6,23 +6,22 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class AgeDifference27335 {
+	static int[] arr = null;
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		br.readLine();
-		String str = br.readLine();
-		StringTokenizer st = new StringTokenizer(str);
+		int N = Integer.parseInt(br.readLine()), max = Integer.MIN_VALUE, min = Integer.MAX_VALUE, v = 0;;
+		StringTokenizer st = new StringTokenizer(br.readLine());
 		StringBuilder sb = new StringBuilder();
-		int m = Integer.MIN_VALUE, n = Integer.MAX_VALUE, v = 0;
+		arr = new int[N];
 		
-		for (int i = 0; i < str.split(" ").length; i++) {
-			v = Integer.parseInt(str.split(" ")[i]);
-			m = Math.max(v, m);
-			n = Math.min(v, n);
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = Integer.parseInt(st.nextToken());
+			max = Math.max(max, arr[i]);
+			min = Math.min(min, arr[i]);
 		}
 		
-		while (st.hasMoreTokens()) {
-			v = Integer.parseInt(st.nextToken());
-			sb.append(Math.max(Math.abs(v-m), Math.abs(v-n))).append("\n");
+		for (int el : arr) {
+			sb.append(Math.max(el-min, max-el)).append("\n");
 		}
 		
 		System.out.print(sb.toString());
