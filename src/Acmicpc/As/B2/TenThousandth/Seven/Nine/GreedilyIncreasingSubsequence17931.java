@@ -3,33 +3,25 @@ package Acmicpc.As.B2.TenThousandth.Seven.Nine;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.StringTokenizer;
 
 public class GreedilyIncreasingSubsequence17931 {
-	static int[] arr = null;
-	static List<Integer> list = new ArrayList<>();
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int N = Integer.parseInt(br.readLine()), v = 0;
+		StringBuilder sb = new StringBuilder();
+		int N = Integer.parseInt(br.readLine()), v = 0, cur = 0, cnt = 0;
 		StringTokenizer st = new StringTokenizer(br.readLine());
-		arr = new int[N];
 		
-		for (int i = 0; i < arr.length; i++) {
-			arr[i] = Integer.parseInt(st.nextToken());
+		while(st.hasMoreTokens()) {
+			v = Integer.parseInt(st.nextToken());
+			if (v <= cur) continue;
+			cnt++;
+			sb.append(v + " ");
+			cur = v;
 		}
 		
-		for(int el : arr) {
-			if (el <= v) continue;
-			list.add(el);
-			v = el;
-		}
-		
-		System.out.println(list.size());
-		for (int el : list) {
-			System.out.print(el + " ");
-		}
+		System.out.println(cnt);
+		System.out.println(sb.toString());
 		br.close();
 	}
 }
